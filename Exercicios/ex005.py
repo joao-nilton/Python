@@ -1,11 +1,7 @@
-n = (input('Digite algo:'))
-print('O tipo primitivo desse valor é {}'.format ( type(n)))
-print('É alfabetico: {}'.format(n.isalpha()))
-print('Só tem espaços: {}'.format (n.isspace()))
-print('É um numero: {}'.format(n.isnumeric()))
-print('É alfanumerico: {}'.format(n.isalnum()))
-print('Está em maiúscula: {}'.format(n.isupper()))
-print('Está em minúscula: {}'.format(n.islower()))
-print('É printável: {}'.format(n.isprintable()))
-print('Está em capitalizada: {}'.format(n.istitle()))
+n = int(input('Digite um numero:'))
+s = n + 1
+a = n - 1
+print('O número sucessor de {} é {}'.format (n, s))
+print('O número antecessor de {} é {}'.format (n, a))
+
 
