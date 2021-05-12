@@ -1,5 +1,6 @@
+print("\n" * 1)
 print('=' * 40)
-print('Este é um conversor  de Reais em Dolar') 
+print('Cálculo de quantidade de tinta necessária') 
 print('=' * 40)
 print("\n" * 1)
 
