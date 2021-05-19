@@ -50,3 +50,4 @@ print('O angulo de {} tem o cossseno de {}'.format(an, cosseno))
 print('O angulo de {} tem a tangente de {}'.format(an, tangente))
 
 print('=' * 40)
+print('=' * 40)
