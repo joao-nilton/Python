@@ -11,4 +11,3 @@ shuffle(palavras)
 
 print (' ')
 print('Os (As) aluno(s)(as) apresentarão na seguintre sequência {}: '.format(palavras))
-#print('A ordem de apresentação será {}: '.format(sequencia))
