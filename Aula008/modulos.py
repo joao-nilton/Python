@@ -1,6 +1,7 @@
 
 import emoji
-print(emoji.emojize('Olá Mundo : sunglasses: ', use_aliases=True))
+print(emoji.emojize('Olá Mundo :sunglasses:' ,use_aliases=True))
+print(emoji.emojize('Python is :thumbs_up:',use_aliases=True))
 
 
 # print('\U0001F601')
