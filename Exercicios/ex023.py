@@ -8,3 +8,6 @@ numdi = len(nomed[0])
 print('=' * 40)
 print (' ')
 print('O numero digitado foi {} e possui {} digitos'. format(dados, numdi))
+
+# Vou colocar um comentário par subir git 28/05/21
+
