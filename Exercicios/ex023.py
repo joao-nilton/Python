@@ -11,6 +11,4 @@ print('O numero digitado foi {} e possui {} digitos'. format(dados, numdi))
 
 # Vou colocar um comentário par subir git 28/05/21
 # Vou colocar um comentário par subir git 29/05/21
-
-# nomed = dados.split()
-# numdi = len(nomed[0])
+# Vou colocar um comentário par subir git 31/05/21
