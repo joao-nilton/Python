@@ -1,13 +1,32 @@
 
-print (' ')
+'''print (' ')
 print('=' * 40)
-print('Programa para analisar o primeiro e último nome de uma pessoa')
+print('Programa para analisar idade de carro')
 print('=' * 40)
 print (' ')
 
-nome = str(input( 'Digite um nome:  ')).strip().split()
+tempo = int(input( 'Quantos anos tem seu carro: '))
 
-print('Seu primeiro nome é {}'.format(nome[0]))
-print('Seu último nome é {}'.format(nome[len(nome)-1])) # [] -> define uma lista em python
+if tempo <= 3:
+    print('Carro novo')
+else:
+    print('Carro velho')
+print('--FIM--')
+
+print('=' * 40)'''
+
+
+# Condições simplificadas
+
+
+print (' ')
+print('=' * 40)
+print('Programa para analisar idade de carro')
+print('=' * 40)
+print (' ')
+
+tempo = int(input( 'Quantos anos tem seu carro: '))
+print('Carro Novo'if tempo <= 3 else 'Carro velho')
+print('--FIM--')
 
 print('=' * 40)
