@@ -12,5 +12,3 @@ else:
     print('O número {} é IMPAR '.format(num))
     
 print (' ')
-
-# Este funcionou bem. Vamos gitar
