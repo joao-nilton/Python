@@ -1,14 +1,18 @@
 print (' ')
 print('=--=' * 20)
-print('PAR OU IMPAR')
+print('PREÇO DA PASSAGEM RODOVIÁRIA')
 print('=--=' * 20)
 
-num = float(input('Me diga um número qualquer: '))
-num1 = num % 2 
+num = float(input('Qual a distância de sua viagem? '))
 
-if num1 == 0:
-    print('O número {} é PAR '.format(num))
+
+if num <= 200:
+    print('Você está prestes a iniciar uma viagem de {} Km'.format(num))
+    num1 = num * 0.50
+    print('E o preço da passagem é de {} Reais'.format(num1))
 else:
-    print('O número {} é IMPAR '.format(num))
+    print('Você está prestes a iniciar uma viagem de {} Km'.format(num))
+    num2 = num * 0.45
+    print('E o preço da passagem é de {} Reais'.format(num2))
     
 print (' ')
