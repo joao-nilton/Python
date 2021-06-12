@@ -7,10 +7,24 @@ primeiro = float(input('Digite o primeiro número: '))
 segundo = float(input('Digite o segundo número: '))
 terceiro = float(input('Digite o terceiro  número: '))
 print (' ')
-if primeiro > segundo :
-    print('O maior valor digitado foi {}'.format())
-else:
-    print('O ano {} NÃO É BISSEXTO')
-    
-    
-    # Esse tá difícil
+
+maior = primeiro
+
+if (segundo > maior):
+        maior = segundo
+if (terceiro > maior):
+        maior = terceiro
+
+print('Maior: ',maior)
+
+    # Achando o menor número
+menor = primeiro
+
+if (segundo < menor):
+        menor = segundo
+if (terceiro < menor):
+        menor = terceiro
+
+print('Menor: ',menor)
+
+    # Esse tá difícil eu copiei
