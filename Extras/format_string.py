@@ -9,8 +9,23 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print('\033[1;31m TTITULO DO PROGRAMA \033[m')
+print('\033[1;31m FORMATANDO CARACTERES \033[m')
 print('=' * 312)  
 print (' ')
 
 """###################################################################################################################"""
+import unicodedata
+
+nome = str(input('\033[1;31mQual é o seu nome? \033[m'))
+string_nova = ''.join(ch for ch in unicodedata.normalize('NFKD', nome) 
+    if not unicodedata.combining(ch))
+#print(string_nova)
+#print(string_nova.upper()) 
+nome1 = string_nova.upper()
+
+if nome1 == 'JOAO':
+    print('\033[32mQue nome bonito {}! \033[m'.format(nome))
+else:    
+    print('\033[32mQue nome comum {}! \033[m'.format(nome))
+
+
