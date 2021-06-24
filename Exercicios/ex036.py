@@ -9,7 +9,7 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"FORMATANDO CARACTERES"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"EMPRÉSTIMO BANCÁRIO"\033[m'))
 print('=' * 312)  
 print (' ')
 
@@ -20,18 +20,12 @@ valor = float(input('\033[31mQual é o valor do imóvel ?  \033[m'))
 sal = float(input('\033[31mQual é o valor do seu salário ?  \033[m'))
 amort = int(input('\033[31mEm quantos meses vai pagar ?  \033[m'))
 prest = valor/amort
-if prest >= (sal * 30/100)+sal:
-    print('\033[33mNão é possível realizar  o financiamento \033[m')
-    '''
-elif nome == 'Pedro' or nome == 'Maria' or nome == 'Paulo':
-    print('Seu nome é bem popular no Brasil! {}. '.format(nome))
-elif nome in 'Ana Cláudia Jéssica Juliana':
-    print('Belo nome feminino.')
-else:
-    print('Seu nome é bem normal !')
-print('\033[34mTenha um bom dia {}! \033[m' .format(nome))
-print (' ')
+porc = sal * 30/100
 
-# o else é opcional para terminar uma estrutura condicional aninhada.
-'''
+print('Para pagar uma casa no valor de R${} em {} meses a prestação será de R${}'.format(valor, amort, prest))
+if prest >= (sal * 30/100):
+    print('\033[33mNão é possível realizar  o financiamento \033[m')
+else:
+    print('\033[33mo financiamento será efetivado\033[m')
+
 
