@@ -9,7 +9,7 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print('\033[1;31m FORMATANDO CARACTERES \033[m')
+print ("  {:^150}  ".format('\033[1;31m"FORMATANDO CARACTERES"\033[m'))
 print('=' * 312)  
 print (' ')
 
@@ -27,5 +27,7 @@ if nome1 == 'JOAO':
     print('\033[32mQue nome bonito {}! \033[m'.format(nome))
 else:    
     print('\033[32mQue nome comum {}! \033[m'.format(nome))
+
+
 
 
