@@ -14,3 +14,19 @@ print('=' * 312)
 print (' ')
 
 """#############################################################################################################"""
+
+num1 = input('Digite o primeiro numero: ')
+num2 = input('Digite o segundo numero: ')
+mysum = int(num1) + int(num2)
+num1a = int(num1, 2) + 0
+num1b = int(num2, 2) + 0 
+print(bin(mysum))
+print(bin(num1a))
+print(bin(num1b))
+
+#num1 = "0b100"
+#num2 = "0b110"
+#num1 = input('Digite o primeiro numero: ')
+#num2 = input('Digite o segundo numero: ')
+#mysum = int(num1, 2) + int(num2, 2)
+#print(bin(mysum))
