@@ -18,7 +18,10 @@ print (' ')
 print('Observe as opções abaixo.\n')
 print('1 : Converte decimal para binário')
 print('2 : Converte decimal para hexadecimal')
-print('3 : Converte decimal para octal\n')
+print('3 : Converte decimal para octal')
+print('4 : Converte binário para decimal')
+print('5 : Converte hexadecimal para decimal')
+print('6 : Converte octal para decimal\n')
 
 sel = int(input('Selecione a opçao desejada: '))
 
@@ -36,6 +39,18 @@ elif sel == 3:
     num3a = int(num1, 10)
     num3b= (oct(num3a))
     print('\n{} em decimal equivale a {} em Octal\n'.format(num1, num3b))
+elif sel == 4:
+    num4a = int(num1, 2)
+    num4b= (int(num4a))
+    print('\n{} em binário equivale a {} em decimal\n'.format(num1, num4b))
+elif sel == 5:
+    num5a = int(num1, 16)
+    num5b= (int(num5a))
+    print('\n{} em hexadecimal equivale a {} em decimal\n'.format(num1, num5b))
+elif sel == 6:
+    num6a = int(num1, 8)
+    num6b= (int(num6a))
+    print('\n{} em octal equivale a {} em decimal\n'.format(num1, num6b))
 else:
     print('\nOpçao inválida.\n')
 
