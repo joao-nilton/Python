@@ -14,7 +14,7 @@ print('=' * 312)
 print (' ')
 
 """#############################################################################################################"""
-
+num = int(input('Digite um número inteiro: '))
 print('Observe as opções abaixo.\n')
 print('1 : Converte decimal para binário')
 print('2 : Converte decimal para hexadecimal')
@@ -22,3 +22,19 @@ print('3 : Converte decimal para octal')
 print('4 : Converte binário para decimal')
 print('5 : Converte hexadecimal para decimal')
 print('6 : Converte octal para decimal\n')
+
+opcao = int(input('Escolha a opção: '))
+if opcao == 1:
+    print('{} convertido para BINÁRIO é igual a {}'. format(num, bin(num)[2:]))
+elif opcao == 2:
+    print('{} convertido para Hexadecimal é igual a {}'. format(num, hex(num)[2:]))
+elif opcao == 3:
+    print('{} convertido para octal é igual a {}'. format(num, oct(num)[2:]))
+elif opcao == 4:
+    print('{} convertido para decimal é igual a {}'. format(num, int(num)[2:]))
+elif opcao == 5:
+    print('{} convertido para decimal é igual a {}'. format(num, int(num)[2:]))
+elif opcao == 6:
+    print('{} convertido para decimal é igual a {}'. format(num, int(num)[2:]))
+else:
+    print('Opção inválida')

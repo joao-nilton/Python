@@ -30,27 +30,27 @@ num1 = input('\nDigite o número que quer converter: ')
 if sel == 1:
     num1a = int(num1, 10)
     num1b= (bin(num1a))
-    print('\n{} em decimal equivale a {} em binário\n'.format(num1, num1b))
+    print('\n{} em decimal equivale a {} em binário\n'.format(num1, num1b[2:]))
 elif sel == 2:
     num2a = int(num1, 10)
     num2b= (hex(num2a))
-    print('\n{} em decimal equivale a {} em hexadecimal\n'.format(num1, num2b))
+    print('\n{} em decimal equivale a {} em hexadecimal\n'.format(num1, num2b[2:]))
 elif sel == 3:
     num3a = int(num1, 10)
     num3b= (oct(num3a))
-    print('\n{} em decimal equivale a {} em Octal\n'.format(num1, num3b))
+    print('\n{} em decimal equivale a {} em Octal\n'.format(num1, num3b[2:]))
 elif sel == 4:
     num4a = int(num1, 2)
     num4b= (int(num4a))
-    print('\n{} em binário equivale a {} em decimal\n'.format(num1, num4b))
+    print('\n{} em binário equivale a {} em decimal\n'.format(num1, num4b[2:]))
 elif sel == 5:
     num5a = int(num1, 16)
     num5b= (int(num5a))
-    print('\n{} em hexadecimal equivale a {} em decimal\n'.format(num1, num5b))
+    print('\n{} em hexadecimal equivale a {} em decimal\n'.format(num1, num5b[2:]))
 elif sel == 6:
     num6a = int(num1, 8)
     num6b= (int(num6a))
-    print('\n{} em octal equivale a {} em decimal\n'.format(num1, num6b))
+    print('\n{} em octal equivale a {} em decimal\n'.format(num1, num6b[2:]))
 else:
     print('\nOpçao inválida.\n')
 
