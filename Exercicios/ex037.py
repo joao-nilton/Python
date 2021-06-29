@@ -40,9 +40,9 @@ elif sel == 3:
     num3b= (oct(num3a))
     print('\n{} em decimal equivale a {} em Octal\n'.format(num1, num3b[2:]))
 elif sel == 4:
-    num4a = int(num1, 2)
-    num4b= (int(num4a))
-    print('\n{} em binário equivale a {} em decimal\n'.format(num1, num4b[2:]))
+    num4a = (num1, 2)
+    num4b= (bin(num4a))
+    print('\n{} em binário equivale a {} em decimal\n'.format(num1, num4a[2:]))
 elif sel == 5:
     num5a = int(num1, 16)
     num5b= (int(num5a))
