@@ -9,17 +9,19 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"COMPARAÇÃO ENTRE VALORES NUMÉRICOS"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"ALISTAMENTO MILITAR"\033[m'))
 print('=' * 312)  
 print (' ')
 
 """#############################################################################################################"""
-num1 = int(input('Digite o primeiro número a ser comparado: '))
-num2 = int(input('Digite o segundo número a ser comparado: '))
 
-if num1 > num2:
-    print('\nO primeiro valor é maior')
-elif num2 > num1:
-    print('\nO segundo valor é maior')
-elif num1 == num2:
-    print('\nNão existe valor maior, os dois são iguais')
+ano_atual = (int(input('Digite o ano corrente: ')))
+nascimento = (int(input('Digite o ano em que você nasceu: ')))
+idade = ano_atual - nascimento
+falta = (ano_atual - nascimento)-idade
+if idade >= 18 and idade <= 19:
+    print('Você está no momento exato de se alistar.')
+elif idade < 18:
+    print ('Voce está com {} e faltam {} para você ter que se alistar'.format(idade, falta))
+else:
+    print(idade)
