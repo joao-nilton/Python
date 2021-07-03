@@ -14,7 +14,7 @@ print('=' * 312)
 print (' ')
 
 """#############################################################################################################"""
-
+''' 
 ano_atual = (int(input('Digite o ano corrente: ')))
 nascimento = (int(input('\nDigite o ano em que você nasceu: ')))
 idade = ano_atual - nascimento
@@ -25,4 +25,30 @@ if idade < 18:
 elif idade >=19:
     print ('\nVoce está com {} anos e se passaram {} anos do prazo de se alistar\n'.format(idade, maior))
 else:
-   print('\nVocê está com 18 anos, momento exato de se alistar.\n')
+   print('\nVocê está com 18 anos, momento exato de se alistar.\n') '''
+
+from datetime import date
+
+atual = date.today().year
+nasc = int(input('Ano de nascimento: '))
+sexo = str('Digite 1 para sexo masculino e 2 para sexo feminino: ')
+idade = atual - nasc
+print('\nQuem nasceu em {} tem {} anos em {}'.format(nasc, idade, atual))
+
+if sexo == 1:
+    if idade == 18:
+        print('\nVoce tem que se alistar IMEDIATAMENTE\n')
+   
+    elif idade < 18:
+        saldo = 18 - idade
+        print('\nAinda falta(m) {} anos para o alistamento\n'.format(saldo))
+        ano = atual + saldo
+        print('Seu alistamento será em  {}\n'.format(ano))
+
+    elif idade > 18:
+        saldo = idade - 18
+        print('\nVocê ja deveria ter se alistado ha  {} anos\n'.format(saldo))
+        ano = atual - saldo
+        print('Seu alistamento deveria ter sido em  {}\n'.format(ano))
+elif sexo == 2:
+    print('Seu alistamento não é obrigatório')
