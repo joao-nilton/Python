@@ -18,10 +18,13 @@ print (' ')
 ano_atual = (int(input('Digite o ano corrente: ')))
 nascimento = (int(input('Digite o ano em que você nasceu: ')))
 idade = ano_atual - nascimento
-falta = (ano_atual - nascimento)-idade
-if idade >= 18 and idade <= 19:
+menor = 18 - idade
+maior = idade - 18
+if idade >= 18 and idade < 19:
     print('Você está no momento exato de se alistar.')
 elif idade < 18:
-    print ('Voce está com {} e faltam {} para você ter que se alistar'.format(idade, falta))
+    print ('Voce está com {} anos e faltam {} para você ter que se alistar'.format(idade, menor))
+elif idade >=19:
+    print ('Voce está com {} anos e se passaram {} do prazo de se alistar'.format(idade, maior))
 else:
-    print(idade)
+   
