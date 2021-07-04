@@ -31,7 +31,7 @@ from datetime import date
 
 atual = date.today().year
 nasc = int(input('Ano de nascimento: '))
-sexo = str('Digite 1 para sexo masculino e 2 para sexo feminino: ')
+sexo = int(input('\nDigite 1 para sexo masculino e 2 para sexo feminino: '))
 idade = atual - nasc
 print('\nQuem nasceu em {} tem {} anos em {}'.format(nasc, idade, atual))
 
@@ -51,4 +51,7 @@ if sexo == 1:
         ano = atual - saldo
         print('Seu alistamento deveria ter sido em  {}\n'.format(ano))
 elif sexo == 2:
-    print('Seu alistamento não é obrigatório')
+    print('\nO alistamento para o sexo feminino não é obrigatório')
+
+else:
+   print('\nMas a opção que você escolheu é inválida')
