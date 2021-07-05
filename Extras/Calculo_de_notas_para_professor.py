@@ -31,3 +31,6 @@ elif media >= 5 and media < 6.9:
     print('\nAluno em RECUPERAÇÃO')
 else:
     print('\nAluno Aprovado')
+
+
+    # Não concluido ... deixar para o futuro. Para ter mais recursos.

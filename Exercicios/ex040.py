@@ -28,3 +28,5 @@ elif media >= 5 and media < 6.9:
     print('\nAluno em RECUPERAÇÃO')
 else:
     print('\nAluno Aprovado')
+
+# Classico. Na pasta extras tem um projeto melhorado. Olha lá
