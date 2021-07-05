@@ -14,7 +14,7 @@ print('=' * 312)
 print (' ')
 
 """#############################################################################################################"""
-
+''' 
 idade = float(input('Digite a idade do atleta: '))
 
 
@@ -30,4 +30,26 @@ elif idade >= 25:
     print('\nAtleta MASTER')
 else:
     print('\nNão se aplica')
-# Classico. Na pasta extras tem um projeto melhorado. Olha lá
+
+'''
+
+from datetime import date
+atual = date.today().year
+nasc = int(input('Digite o ano de nascimento do atleta:  '))
+# sexo = int(input('\nDigite 1 para sexo masculino e 2 para sexo feminino: '))
+idade = atual - nasc
+
+print('O atleta tem {} anos'.format(idade))
+
+
+
+if idade > 1 and idade <= 9:
+    print('\nClassificação: Atleta MIRIM')
+elif idade <=14: 
+    print('\nClassificação: Atleta INFANTIL')
+elif idade <= 19:
+    print('\nClassificação: Atleta JÚNIOR')
+elif idade <= 25:
+    print('\nClassificação: Atleta SÊNIOR')  
+else:
+    print('\nClassificação: Atleta MASTER')
