@@ -9,7 +9,7 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"FORMATANDO CARACTERES"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"TRIÂNGULOS"\033[m'))
 print('=' * 312)  
 print (' ')
 
@@ -17,11 +17,47 @@ print (' ')
 
 print ('Ou...')
 
-lado1 = float(input('Digite o primeiro número: '))
-lado2 = float(input('Digite o segundo número: '))
-lado3 = float(input('Digite o terceiro  número: '))
+lado1 = float(input('Digite o  valor do primeiro lado: '))
+lado2 = float(input('Digite o valor do segundo lado: '))
+lado3 = float(input('Digite o valor do terceiro lado:  '))
 if lado1 < lado2 + lado3 and lado2 < lado1 + lado3 and lado3 < lado1 +lado2:
 #if lado1 > lado2 - lado3 and lado2 > lado1 - lado3 and lado3 > lado1 - lado2: * não deu certo porque o valor da diferenca é em módulo.
-    print('Os segmentos acima podem formar um triângulo')
+    print('\nOs segmentos acima podem formar um triângulo') 
+    if lado1 == lado2 and lado1 == lado3 and lado3 == lado2:
+        print('Este triângulo é equilátero')  
+    elif lado1 == lado2 or lado1 == lado3 or lado3 == lado2:
+        print('Este triângulo é isósceles')  
+    elif lado1 != lado2 and lado1 != lado3 and lado3 != lado2:
+        print('Este triângulo é escaleno')  
 else:
-    print('Os segmentos acima não podem formar um triângulo')
+    print('\nOs segmentos acima não podem formar um triângulo')
+
+'''    a = float(input('Primeiro lado: '))
+    b = float(input('Segundo  lado: '))
+    c = float(input('Terceiro lado: '))
+    
+    # Testando se é triângulo
+    if (a + b < c) or (a + c < b) or (b + c < a):
+        print('Nao é um triangulo')
+    elif (a == b) and (a == c) :
+        print('Equilatero')
+    elif (a==b) or (a==c) or (b==c):
+        print('Isósceles')
+    else:
+        print('Escaleno')
+
+      # Este é o programa do Guanabara.
+        r1 = float(input('Primeiro segmento: '))
+        r2 = float(input('Segundo segmento: '))
+        r3 = float(input('Terceiro segmento: '))
+
+if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2
+    print(' OS segmentos acima podem formar um triângulo ', end='')
+        if = r1 == r2 == r3:
+            print('EQUILÁTERO!')
+        elif r1 != r2 != r3 != r1:
+            print('ESCALENO')
+        else:
+            print('ISÓSCELES!')
+else:
+    print('OS segmentos acima NÃO PODEM FORMAR triângulo. ') '''
