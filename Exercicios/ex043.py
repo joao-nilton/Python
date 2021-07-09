@@ -20,20 +20,21 @@ altura = float(input('Digite a sua altura em metros: '))
 
 imc = peso/altura**2
 
+print ('\nSeu IMC é de {:.1f}'.format(imc))
 if imc < 18.5:
-    print('\nVocê está abaixo do peso ideal.')
+    print('\nVocê está abaixo do peso ideal.\n')
 elif imc >= 18.5 and imc < 25:
-    print('\nVocê está no peso ideal.')
+    print('\nVocê está no peso ideal.\n')
 elif imc >= 25 and imc < 30:
-    print('\nVocê está com sobrepeso.')
+    print('\nVocê está com sobrepeso.\n')
 elif imc >= 30 and imc < 40:
-    print('\nVocê está com obesidade. ')
+    print('\nVocê está com obesidade.\n')
 else:
-    print('\nVocê está com obesidade mórbida')
+    print('\nVocê está com obesidade mórbida.\n')
 
 '''
 IAC significa Índice de Adiposidade Corporal. É um novo método que usa o tamanho dos quadris para medira gordura do corpo
-%G = ((Circunferência Quadril (cm))/Altura (m) X srt(altura(m))) - 18
+%G = ((Circunferência Quadril (cm))/Altura (m) X sqrt(altura(m))) - 18
 
     H              M   
  8 a 20         21 a 32     -> Adiposidade normal
