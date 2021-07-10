@@ -41,13 +41,13 @@ elif pagamento == 4:
     # MODELO GUANABARA
 
 valor = float(input('Qual o valor do produto: '))
+print('FORMAS DE PAGAMENTO')
+print('\n[1] Pagamento à vista dinheiro/cheque.')
+print('\n[2] Pagamento à vista no cartão.')
+print('\n[3] Pagamento em até 2X no cartão.')
+print('\n[4] Pagamento em 3X ou mais no cartão.\n')
 
-print('\nDigite (1) um  para dinheiro/cheque.\n')
-print('\nDigite (2) dois para cartão à vista.\n')
-print('\nDigite (3) para até 2X no cartão.\n')
-print('\nDigite (4) para 3X ou mais no cartão.\n')
 pagamento = float(input('Qual a forma de Pagamento? '))
-
 
 if pagamento == 1:
     desconto1 = (valor - ((valor * 10)/100))
@@ -59,5 +59,6 @@ elif pagamento == 3:
     desconto3 = valor 
     print('\nO valor a ser pago é de R$ {:.2f}\n:'.format(desconto3))
 elif pagamento == 4:
+    print('Quantas parcelas? ')
     desconto4 = valor + ((valor * 20)/100)
     print('\nO valor a ser pago é de R$ {:.2f}\n:'.format(desconto4))
