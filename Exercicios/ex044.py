@@ -59,6 +59,8 @@ elif pagamento == 3:
     desconto3 = valor 
     print('\nO valor a ser pago é de R$ {:.2f}\n:'.format(desconto3))
 elif pagamento == 4:
-    print('Quantas parcelas? ')
+    prestacoes = int(input('\nQuantas parcelas? '))
     desconto4 = valor + ((valor * 20)/100)
-    print('\nO valor a ser pago é de R$ {:.2f}\n:'.format(desconto4))
+    prestacoesjuros = desconto4/prestacoes
+    print('\nSua compra será parcelada em {}x de R$ {:.2f} com juros.'.format(prestacoes, prestacoesjuros))
+    print('\nO valor total a ser pago é de R$ {:.2f}\n:'.format(desconto4))
