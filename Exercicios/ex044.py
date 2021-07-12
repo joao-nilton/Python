@@ -40,27 +40,31 @@ elif pagamento == 4:
 
     # MODELO GUANABARA
 
+print('{:=^40}'.format('LOJAS GUANABARA\n'))
 valor = float(input('Qual o valor do produto: '))
-print('FORMAS DE PAGAMENTO')
-print('\n[1] Pagamento à vista dinheiro/cheque.')
-print('\n[2] Pagamento à vista no cartão.')
-print('\n[3] Pagamento em até 2X no cartão.')
-print('\n[4] Pagamento em 3X ou mais no cartão.\n')
+print('''FORMAS DE PAGAMENTO
+[1] Pagamento à vista dinheiro/cheque.')
+[2] Pagamento à vista no cartão.')
+[3] Pagamento em até 2X no cartão.')
+[4] Pagamento em 3X ou mais no cartão.\n''')
 
 pagamento = float(input('Qual a forma de Pagamento? '))
 
 if pagamento == 1:
-    desconto1 = (valor - ((valor * 10)/100))
-    print('\nO valor a ser pago é de R$ {:.2f}\n:'.format(desconto1))
+    desconto = (valor - ((valor * 10)/100))
+   
 elif pagamento == 2:
-    desconto2 = (valor - ((valor * 5)/100))
-    print('\nO valor a ser pago é de R$ {:.2f}\n:'.format(desconto2))
+    desconto = (valor - ((valor * 5)/100))
+
 elif pagamento == 3:
-    desconto3 = valor 
-    print('\nO valor a ser pago é de R$ {:.2f}\n:'.format(desconto3))
+    desconto  = valor 
+    parcela = valor/2
+    print('Sua compra será parcelada em 2x de {}, SEM JUROS.'.format(parcela))
 elif pagamento == 4:
     prestacoes = int(input('\nQuantas parcelas? '))
-    desconto4 = valor + ((valor * 20)/100)
-    prestacoesjuros = desconto4/prestacoes
-    print('\nSua compra será parcelada em {}x de R$ {:.2f} com juros.'.format(prestacoes, prestacoesjuros))
-    print('\nO valor total a ser pago é de R$ {:.2f}\n:'.format(desconto4))
+    desconto = valor + ((valor * 20)/100)
+    prestacoesjuros = desconto/prestacoes
+    print('\nSua compra será parcelada em {}x de R$ {:.2f} COM JUROS.'.format(prestacoes, prestacoesjuros))
+else:
+    print( 'OPÇÃO INVÁLIDA.')
+print('\nSua compra de R$ {:.2f} vai custar R$ {:.2f} no final.\n'.format(valor, desconto))
