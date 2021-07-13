@@ -14,3 +14,10 @@ print('=' * 312)
 print (' ')
 
 """#############################################################################################################"""
+
+'''
+Pedra ganha da tesoura (amassando-a ou quebrando-a).
+Tesoura ganha do papel (cortando-o).
+Papel ganha da pedra (embrulhando-a).
+Este jogo possui uma única regra: não é permitido mostrar pedra duas vezes seguidas.
+'''
