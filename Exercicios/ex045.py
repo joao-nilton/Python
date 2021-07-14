@@ -21,3 +21,31 @@ Tesoura ganha do papel (cortando-o).
 Papel ganha da pedra (embrulhando-a).
 Este jogo possui uma única regra: não é permitido mostrar pedra duas vezes seguidas.
 '''
+from random import choice
+
+a1 = input('Digite o nome do aluno 1: ')
+a2 = input('Digite o nome do aluno 2: ')
+a3 = input('Digite o nome do aluno 3: ')
+a4 = input('Digite o nome do aluno 4: ')
+
+lista = [a1, a2, a3, a4 ]
+
+sorteio = choice(lista)
+print (' ')
+print('O (A) aluno(a) sorteado foi {}: '.format(sorteio))
+
+from random import randint
+from time import sleep
+print (' ')
+print('=--=' * 20)
+print('JOGO DA ADIVINHAÇÃO')
+print('=--=' * 20)
+print('Vou pensar num número entre 0 e 5. Tente adivinhar...')
+print('+--+' * 20)
+print (' ')
+
+num = int(input('Em que número eu pensei? '))
+print('PROCESSANDO...')
+sleep(3)
+#num1 = random.randint(0, 5)
+num1 = randint(0, 5)
