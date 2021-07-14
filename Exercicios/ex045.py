@@ -22,30 +22,33 @@ Papel ganha da pedra (embrulhando-a).
 Este jogo possui uma única regra: não é permitido mostrar pedra duas vezes seguidas.
 '''
 from random import choice
-
-a1 = input('Digite o nome do aluno 1: ')
-a2 = input('Digite o nome do aluno 2: ')
-a3 = input('Digite o nome do aluno 3: ')
-a4 = input('Digite o nome do aluno 4: ')
-
-lista = [a1, a2, a3, a4 ]
-
-sorteio = choice(lista)
-print (' ')
-print('O (A) aluno(a) sorteado foi {}: '.format(sorteio))
-
-from random import randint
 from time import sleep
-print (' ')
-print('=--=' * 20)
-print('JOGO DA ADIVINHAÇÃO')
-print('=--=' * 20)
-print('Vou pensar num número entre 0 e 5. Tente adivinhar...')
-print('+--+' * 20)
-print (' ')
+#from random import randint
 
-num = int(input('Em que número eu pensei? '))
-print('PROCESSANDO...')
-sleep(3)
+
+print('''
+[0] PEDRA
+[1] PAPEL
+[2] TESOURA
+''')
+jogada = int(input('Qual é a sua jogada? '))
+0 == 'Pedra'
+1 == 'Papel'
+2 == 'Tesoura'
+sleep(2)
+print('JO')
+sleep(2)
+print('KEN')
+sleep(2)
+print('PO!!!')
+print('=-' * 40)
+
+lista = ['Pedra', 'Papel', 'Tesoura']
+sorteio = choice(lista)
+
+print('O Computador jogou {}: '.format(sorteio))
+print('O Jogador jogou {}: '.format(jogada))
+print('=-' * 40)
+
 #num1 = random.randint(0, 5)
-num1 = randint(0, 5)
+#num1 = randint(0, 5)
