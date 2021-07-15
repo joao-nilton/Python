@@ -32,9 +32,16 @@ print('''
 [2] TESOURA
 ''')
 jogada = int(input('Qual é a sua jogada? '))
-0 == 'Pedra'
-1 == 'Papel'
-2 == 'Tesoura'
+
+if jogada == 0:
+    selecao = 'Pedra'
+elif jogada == 1:
+    selecao = 'Papel'
+elif jogada == 2:
+    selecao = 'Tesoura'
+else:
+    print('Opção inválida')
+
 sleep(2)
 print('JO')
 sleep(2)
@@ -47,8 +54,14 @@ lista = ['Pedra', 'Papel', 'Tesoura']
 sorteio = choice(lista)
 
 print('O Computador jogou {}: '.format(sorteio))
-print('O Jogador jogou {}: '.format(jogada))
+print('O Jogador jogou {}: '.format(selecao))
 print('=-' * 40)
 
+if selecao == 'Pedra' and sorteio == 'Pedra':
+    print('EMPATE')
+elif selecao == 'Pedra' and sorteio == 'Papel':
+    print('COMPUTADOR VENCE')
+elif selecao == 'Pedra' and sorteio == 'Tesoura':
+    print('JOGADOR VENCE')
 #num1 = random.randint(0, 5)
 #num1 = randint(0, 5)
