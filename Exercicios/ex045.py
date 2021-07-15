@@ -21,15 +21,16 @@ Tesoura ganha do papel (cortando-o).
 Papel ganha da pedra (embrulhando-a).
 Este jogo possui uma única regra: não é permitido mostrar pedra duas vezes seguidas.
 '''
+''' 
 from random import choice
 from time import sleep
 #from random import randint
 
 
 print('''
-[0] PEDRA
-[1] PAPEL
-[2] TESOURA
+#[0] PEDRA
+#[1] PAPEL
+#[2] TESOURA
 ''')
 jogada = int(input('Qual é a sua jogada? '))
 
@@ -42,19 +43,19 @@ elif jogada == 2:
 else:
     print('Opção inválida')
 
-sleep(2)
+sleep(1)
 print('JO')
-sleep(2)
+sleep(1)
 print('KEN')
-sleep(2)
+sleep(1)
 print('PO!!!')
 print('=-' * 40)
 
 lista = ['Pedra', 'Papel', 'Tesoura']
 sorteio = choice(lista)
 
-print('O Computador jogou {}: '.format(sorteio))
-print('O Jogador jogou {}: '.format(selecao))
+print('O Computador jogou: {}. '.format(sorteio))
+print('O Jogador jogou: {}. '.format(selecao))
 print('=-' * 40)
 
 if selecao == 'Pedra' and sorteio == 'Pedra':
@@ -63,5 +64,73 @@ elif selecao == 'Pedra' and sorteio == 'Papel':
     print('COMPUTADOR VENCE')
 elif selecao == 'Pedra' and sorteio == 'Tesoura':
     print('JOGADOR VENCE')
+elif selecao == 'Papel' and sorteio == 'Pedra':
+    print('JOGADOR VENCE')
+elif selecao == 'Papel' and sorteio == 'Papel':
+    print('EMPATE')
+elif selecao == 'Papel' and sorteio == 'Tesoura':
+    print('COMPUTADOR VENCE')
+elif selecao == 'Tesoura' and sorteio == 'Pedra':
+    print('COMPUTADOR VENCE')
+elif selecao == 'Tesoura' and sorteio == 'Papel':
+    print('JOGADOR VENCE')
+elif selecao == 'Tesoura' and sorteio == 'Tesoura':
+    print('EMPATE')
+else:
+    print('Erro! Tente novamente.')
 #num1 = random.randint(0, 5)
-#num1 = randint(0, 5)
+#num1 = randint(0, 5) '''
+
+
+# VERSÃO GUANABARA
+
+from random import randint
+from time import sleep
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = randint(0,2)
+print( '''Suas opções
+[0] PEDRA
+[1] PAPEL
+[2] TESOURA ''')
+jogador = int(input('Qual é a sua jogada? '))
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
+
+print('-='* 20)
+print('O computador jogou {}'.format(itens[computador]))
+print('O jogador jogou {}'.format(itens[jogador]))
+print('-='* 20)
+
+if computador == 0: #copmutador jogou PEDRA.
+    if jogador == 0:
+        print('EMPATE')
+    elif jogador == 1:
+        print('JOGADOR VENCE')
+    elif jogador == 2:
+        print('COMPUTADOR VENCE')
+    else:
+        print('JOGADA INVÁLIDA')
+    
+
+elif computador == 1: # computador jogou PAPEL.
+    if jogador == 0:
+        print('COMPUTADOR VENCE')
+    elif jogador == 1:
+        print('EMPATE')
+    elif jogador == 2:
+        print('JOGADOR VENCE')
+    else:
+        print('JOGADA INVÁLIDA')
+
+elif computador == 2: # computador jogou TESOURA.
+    if jogador == 0:
+        print('JOGADOR VENCE')
+    elif jogador == 1:
+        print('COMPUTADOR VENCE')
+    elif jogador == 2:
+        print('EMPATE')
+    else:
+        print('JOGADA INVÁLIDA')
