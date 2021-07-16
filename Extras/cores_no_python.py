@@ -18,7 +18,7 @@ b = 5
 print('os valores são \033[32m{}\033[m e \033[31m{}\033[m!!!'.format(a,b))
 print (' ')
 
-nome = str(input('Digite seu nome: '))
+nome = str(input('\033[7;31m Digite seu nome: \033[m)'))
 print('Olá! Muito prazer em te conhecer {} {} {}!!!,'.format('\033[7;31m', nome, '\033[m'))
 
 nome = str(input('Digite seu nome: '))
