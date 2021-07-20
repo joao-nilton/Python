@@ -4,27 +4,29 @@
 # print('{} Muito prazer em te conhecer! {} SSS '.format(cores['pretoebranco'], cores['limpa']))
 #print('Olá! Muito prazer em te conhecer {} {} {}!!!,'.format(cores['pretoebranco'], nome, cores['limpa']))
 
+# +++++
 cores ={'limpa':'\033[m', 'branco':'\033[30m','vermelho':'\033[31m','verde':'\033[32m','amarelo':'\033[33m','azul':'\033[34m', 'mangenta':'\033[35m','ciano':'\033[36m','cinza':'\033[37m', 'pretoebranco':'\033[1;30m'}
 bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[42m','amarelo':'\033[43m','azul':'\033[44m', 'mangenta':'\033[45m','ciano':'\033[46m','cinza':'\033[47m', 'pretoebranco':'\033[1;40m'}
 
 print (' ')
 print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"FORMATANDO CARACTERES"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"DOBRO, TRIPLO E RAIZ"\033[m'))
 print('=' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
+#print('\033[3;33;44mOlá, Mundo!\033[m')
 
 
 
 
-
-n = int(input('Digite um numero: '))
-s = n + 1
-a = n - 1
-print('O número sucessor de {}{}{} é {}{}{}'.format (cores['mangenta'],n,cores['limpa'], cores['verde'],s,cores['limpa']))
-print('O número antecessor de {}{}{} é {}{}{}'.format (cores['amarelo'], n, cores['limpa'], cores['verde'], a, cores['limpa']))
-
+n = int(input('\033[1;34m Digite um numero: \033[m'))
+d = n * 2
+t = n * 3
+s = n**(1/2)
+print('O dobro de \033[1;31m{}\033[m é \033[1;32m{}\033[m'.format (n, d))
+print('O triplo de \033[1;31m{}\033[m é \033[1;34m{}\033[m'.format (n, t))
+print('A raiz quadrade de \033[1;31m{}\033[m é \033[1;35m{}\033[m'.format (n, s))
 
 #print('Á soma entre {}{}{} e {}{}{} é {}{}{}'.format (cores['mangenta'],n1, cores['limpa'] ,cores['verde'],n2, cores['limpa'],cores['amarelo'],n1+n2, cores['limpa']))

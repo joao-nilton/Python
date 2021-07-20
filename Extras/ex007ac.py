@@ -14,18 +14,20 @@ print('=' * 312)
 print (' ')
 
 """#############################################################################################################"""
+n1 = float(input('\033[1;31mDigite a primeira nota do aluno:\033[m '))
+n2 = float(input('\033[1;31mDigite a segunda nota do aluno:\033[m '))
+n3 = float(input('\033[1;31mDigite a terceira nota do aluno:\033[m '))
+m = (n1 + n2 + n3)/3
+
+print('\nA média entre {}, {} e {} é {:.2f} \n'.format (n1, n2, n3, m))
+
+
+
+#+++++
 
 #print('\033[3;33;44mOlá, Mundo!\033[m')
-
-
-
-
-n = int(input('\033[1;34m Digite um numero: \033[m'))
-d = n * 2
-t = n * 3
-s = n**(1/2)
-print('O dobro de \033[1;31m{}\033[m é \033[1;32m{}\033[m'.format (n, d))
-print('O triplo de \033[1;31m{}\033[m é \033[1;34m{}\033[m'.format (n, t))
-print('A raiz quadrade de \033[1;31m{}\033[m é \033[1;35m{}\033[m'.format (n, s))
-
+#n = int(input('\033[1;34m Digite um numero: \033[m'))
+#print('O dobro de \033[1;31m{}\033[m é \033[1;32m{}\033[m'.format (n, d))
+#print('O triplo de \033[1;31m{}\033[m é \033[1;34m{}\033[m'.format (n, t))
+#print('A raiz quadrade de \033[1;31m{}\033[m é \033[1;35m{}\033[m'.format (n, s))
 #print('Á soma entre {}{}{} e {}{}{} é {}{}{}'.format (cores['mangenta'],n1, cores['limpa'] ,cores['verde'],n2, cores['limpa'],cores['amarelo'],n1+n2, cores['limpa']))
