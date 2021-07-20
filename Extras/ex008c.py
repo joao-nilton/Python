@@ -9,13 +9,30 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"FORMATANDO CARACTERES"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"CONVERSOR DE MEDIDA DE COMPRIMENTO"\033[m'))
 print('=' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
 
+print('Este é um conversor de medidas de comprimento') 
+m = float(input('\nDigite o valor que quer, em metros, da medida que quer converter: '))
+km = m * 0.001
+hm = m * 0.01
+dam = m * 0.1
+dm = m * 10
+cm = m * 100
+mm = m *1000
+inch = m * 39.3701
+
+print('\n {} \033[1;31mmetro(s)\033[m corresponde a {} \033[1;32m Kilometros(s)\033[m'. format(m, km)) 
+print('\n {} \033[1;31mmetro(s)\033[m corresponde a {} \033[1;33m hectômetro(s)\033[m'. format(m, hm)) 
+print('\n {} \033[1;31mmetro(s)\033[m corresponde a {} \033[1;34m decâmetro(s)\033[m'. format(m, dam))
+print('\n {} \033[1;31mmetro(s)\033[m corresponde a {} \033[1;35m decímetro(s)\033[m'. format(m, dm))  
+print('\n {} \033[1;31mmetro(s)\033[m corresponde a {} \033[1;36m centímetro(s)\033[m'. format(m, cm)) 
+print('\n {} \033[1;31mmetro(s)\033[m corresponde a {} \033[1;37m milímetro(s)\033[m'. format(m, mm)) 
+print('\n {} \033[1;31mmetro(s)\033[m corresponde a {} \033[1;41m polegada(s)\033[m'. format(m, inch))
 
 #+++++
 
