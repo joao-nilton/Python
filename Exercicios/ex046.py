@@ -16,22 +16,19 @@ print (' ')
 """#############################################################################################################"""
 
 from time import sleep
+import emoji
 
-n = int(input('Digite um numero: '))
-for c in range(0, n+1):
+
+
+print('Contagem regressiva para queima dos fogos')
+for c in range( 10, 0, -1 ):
     print(c)
-print('FIM')
+    sleep(1)
+print(emoji.emojize('POW!! POW!! KABUM!!! :bottle_with_popping_cork:',use_aliases=True))
 
-itens = ('Pedra', 'Papel', 'Tesoura')
-computador = randint(0,2)
-print( '''Suas opções
-[0] PEDRA
-[1] PAPEL
-[2] TESOURA ''')
-jogador = int(input('Qual é a sua jogada? '))
-print('JO')
-sleep(1)
+print(emoji.emojize('POW!! POW!! KABUM!!! :fire:',use_aliases=True,))
 
+print(emoji.emojize(':fireworks:',use_aliases=True))
 
 
 #+++++
