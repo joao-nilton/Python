@@ -9,17 +9,28 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"FORMATANDO CARACTERES"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"CONTAGEM REGRESSIVA"\033[m'))
 print('=' * 312)  
 print (' ')
 
 """#############################################################################################################"""
-n1 = float(input('\033[1;31mDigite a primeira nota do aluno:\033[m '))
-n2 = float(input('\033[1;31mDigite a segunda nota do aluno:\033[m '))
-n3 = float(input('\033[1;31mDigite a terceira nota do aluno:\033[m '))
-m = (n1 + n2 + n3)/3
 
-print('\nA média entre {}, {} e {} é {:.2f} \n'.format (n1, n2, n3, m))
+from time import sleep
+
+n = int(input('Digite um numero: '))
+for c in range(0, n+1):
+    print(c)
+print('FIM')
+
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = randint(0,2)
+print( '''Suas opções
+[0] PEDRA
+[1] PAPEL
+[2] TESOURA ''')
+jogador = int(input('Qual é a sua jogada? '))
+print('JO')
+sleep(1)
 
 
 
