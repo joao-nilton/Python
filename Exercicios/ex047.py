@@ -9,26 +9,12 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CONTAGEM REGRESSIVA"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"FORMATANDO CARACTERES"\033[m'))
 print('=' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
-from time import sleep
-import emoji
-
-
-
-print('Contagem regressiva para queima dos fogos')
-for c in range( 10, 0, -1 ): # ou (10, -1, -1) para contar até zero.
-    print(c)
-    sleep(1)
-print(emoji.emojize('POW!! POW!! KABUM!!! :bottle_with_popping_cork:',use_aliases=True))
-
-print(emoji.emojize('POW!! POW!! KABUM!!! :fire:',use_aliases=True,))
-
-print(emoji.emojize(':fireworks:',use_aliases=True))
 
 
 #+++++
