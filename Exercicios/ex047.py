@@ -9,15 +9,30 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"FORMATANDO CARACTERES"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"NÚMEROS PARES"\033[m'))
 print('=' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
+#print('Contagem regressiva para queima dos fogos')
+#for c in range(0, 51 ): # ou (10, -1, -1) para contar até zero.
+for num in range (0, 51, 2):
+    print(num, end=' ')
+
+# OU ...
+
+print ('Números pares entre 1 e 50')
+
+n = 0
+
+for n in range (1, 51):
+    if n % 2 == 0 :
+        print(n, end=' ')
+print('FIM')
 
 
-#+++++
+
 
 #print('\033[3;33;44mOlá, Mundo!\033[m')
 #n = int(input('\033[1;34m Digite um numero: \033[m'))
