@@ -25,6 +25,8 @@ print('\nA média entre {}, {} e {} é {:.2f} \n'.format (n1, n2, n3, m))
 
 #+++++
 
+# print(n, end=' ')
+
 #print('\033[3;33;44mOlá, Mundo!\033[m')
 #n = int(input('\033[1;34m Digite um numero: \033[m'))
 #print('O dobro de \033[1;31m{}\033[m é \033[1;32m{}\033[m'.format (n, d))

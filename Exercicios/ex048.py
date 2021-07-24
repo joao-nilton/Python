@@ -9,31 +9,40 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"NÚMEROS PARES"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"SOMA DOS MÚLTIPLOS DE # ATÉ 500"\033[m'))
 print('=' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
-#print('Contagem regressiva para queima dos fogos')
-#for c in range(0, 51 ): # ou (10, -1, -1) para contar até zero.
-for num in range (0, 51, 2):
-    print('.', end = '')
-    print(num, end=' ')
+    
+sum = 0
+for c in range(0, 501, 3):
+   # n = int(input('Digite um valor: '))
+   if c % 2 != 0 and c % 3 == 0:
+    sum += c
+    print(c, end=' ')
 
-# OU ...
+print('\nO somatório de todos os valores foi {}'.format(sum))
 
-print ('Números pares entre 1 e 50')
+# OU
+# Opa deu um resultado interessante abaixo. Foi a soma de todos os numeros pares multiplos de 3
+sum = 0
+for c in range(0, 501, 2):
 
-n = 0
+   if c % 3 == 0:
+    sum += c
+    print(c, end=' ')
 
-for n in range (1, 51): # ocorre maior numero de iteraçoes. para ver print('.', end = '')
-    if n % 2 == 0 :
-        print(n, end=' ')
-print('FIM')
-
+print('\nO somatório de todos os valores foi {}'.format(sum))
 
 
+
+
+
+#+++++
+
+# print(n, end=' ')
 
 #print('\033[3;33;44mOlá, Mundo!\033[m')
 #n = int(input('\033[1;34m Digite um numero: \033[m'))
