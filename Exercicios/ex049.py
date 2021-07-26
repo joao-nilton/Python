@@ -9,64 +9,31 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"SOMA DOS MÚLTIPLOS DE 3 ATÉ 500"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"TABUADA COM LAÇO FOR"\033[m'))
 print('=' * 312)  
 print (' ')
 
 """#############################################################################################################"""
-
-# Este abaixo é o primeiro a dar o valor correspondente ao exercício mas a != mostru-se desnecessária    
-sum = 0
-for c in range(0, 501, 3):
-   if c % 2 != 0 and c % 3 == 0:
-    sum += c
-    print(c, end=' ')
-print('\nO somatório de todos os valores foi {}'.format(sum))
-print(' + - + ' * 20 )
-print(' ')
-
-# OU
-# Opa deu um resultado interessante abaixo. Foi a soma de todos os numeros pares multiplos de 3
-
-sum = 0
-for c in range(0, 501, 2):
-    if c % 3 == 0:
-        sum += c
-        print(c, end=' ')
-
-print('\nO somatório de todos os valores foi {}'.format(sum))
-print(' ++ ' * 20 )
-print(' ')
+print('=' * 40)
+print('Este é um gerador de tabuada') 
+print('=' * 40)
+n = float(input('\n\033[1;33mDigite qual o número que voce quer ver a multiplicação: \033[m '))
+print (' ')
 
 
-# Com contador. Resolução Guanabara
-print('--' * 20 )
-print(' ')
-sum = 0
 cont = 0
-for c in range(1, 501, 2):
+for c in range(0, 11):
+        cont = cont + 1 # ou cont +=1 
+        mult = n * cont
+        print('{} X {} = {}'.format(n, cont, mult))
 
-    if c % 3 == 0:
-        cont = cont + 1 # ou cont +=1 ( 83 ímapres divisiveis por 3)
-        sum += c
+print('=' * 40) 
 
-print('A soma de tosdos os {} valores solicitados é {}'.format(cont, sum))
-print('--' * 20 )
-print(' ')
-
-# Este é para ver a tabulação do count
-
-sum = 0
-cont = 0
-for c in range(1, 501, 2):
-
-    if c % 3 == 0:
-        sum += c
-    cont = cont + 1 # ou cont +=1 ( 520 ímpares)
-print('\033[1;34mA soma de tosdos os {} valores solicitados é {}\033[m'.format(cont, sum))
+# OU versão Guanabara.
 
 
 # print(n, end=' ')
+
 #print('\033[3;33;44mOlá, Mundo!\033[m')
 #n = int(input('\033[1;34m Digite um numero: \033[m'))
 #print('O dobro de \033[1;31m{}\033[m é \033[1;32m{}\033[m'.format (n, d))
