@@ -21,7 +21,7 @@ n = float(input('\n\033[1;33mDigite qual o número que voce quer ver a multiplic
 print (' ')
 
 
-cont = 0
+cont = -1
 for c in range(0, 11):
         cont = cont + 1 # ou cont +=1 
         mult = n * cont
@@ -30,6 +30,11 @@ for c in range(0, 11):
 print('=' * 40) 
 
 # OU versão Guanabara.
+n = float(input('\n\033[1;35mDigite qual o número que voce quer ver a multiplicação: \033[m '))
+for c in range(0, 11):
+        print('{} X {:2} = {}'.format(n, c , n * c))
+
+print('=' * 40) 
 
 
 # print(n, end=' ')
