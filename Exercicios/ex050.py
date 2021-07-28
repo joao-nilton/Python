@@ -18,7 +18,7 @@ print('=' * 40)
 
 # n = float(input('\n\033[1;33mDigite qual o número que voce quer ver a multiplicação: \033[m '))
 print (' ')
-
+'''
 sum = 0
 cont = 0
 for c in range(0, 6):
@@ -29,9 +29,22 @@ for c in range(0, 6):
 
 print ('A soma dos números pares é:  {}'.format(sum))
 
+print('=' * 40) '''
+
+# OU ... Soluçao Guanabara
+print (' ')
+
+sum = 0
+cont = 0
+for c in range(1, 7):
+        
+        n = int(input('Digite o {}º número:   '.format(c)))
+        if n % 2 == 0:
+            sum += n 
+            cont += 1 
+print ('Você informou {} números pares e a soma foi {} '.format(cont, sum))
+
 print('=' * 40) 
-
-
 
 # print(n, end=' ')
 
