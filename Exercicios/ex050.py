@@ -42,8 +42,8 @@ for c in range(1, 7):
         if n % 2 == 0:
             sum += n 
             cont += 1 
-print ('Você informou {} números pares e a soma foi {} '.format(cont, sum))
-
+print ('\n\033[1;34mVocê informou {} números pares e a soma foi {}\033[m '.format(cont, sum))
+print (' ')
 print('=' * 40) 
 
 # print(n, end=' ')
