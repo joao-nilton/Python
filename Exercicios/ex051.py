@@ -11,17 +11,16 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"FORMATANDO CARACTERES"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"PROGRESSÃO ARITMÉTICA - PA."\033[m'))
 print('=' * 312)  
 print (' ')
 
 """#############################################################################################################"""
-n1 = float(input('\033[1;31mDigite a primeira nota do aluno:\033[m '))
-n2 = float(input('\033[1;31mDigite a segunda nota do aluno:\033[m '))
-n3 = float(input('\033[1;31mDigite a terceira nota do aluno:\033[m '))
-m = (n1 + n2 + n3)/3
+n1 = float(input('\033[1;31mQual o valor do primeiro Termo?\033[m '))
+n2 = float(input('\033[1;31mQual é a Razão? \033[m '))
 
-print('\nA média entre {}, {} e {} é {:.2f} \n'.format (n1, n2, n3, m))
+for c in range (n1, n1+n2):
+    print(n , n+1 )
 
 
 
