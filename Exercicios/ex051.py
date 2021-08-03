@@ -10,18 +10,24 @@ cores ={'limpa':'\033[m', 'branco':'\033[30m','vermelho':'\033[31m','verde':'\03
 bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[42m','amarelo':'\033[43m','azul':'\033[44m', 'mangenta':'\033[45m','ciano':'\033[46m','cinza':'\033[47m', 'pretoebranco':'\033[1;40m'}
 
 print (' ')
-print('=' * 312)
+print('\033[1;34m=\033[m' * 312)
 print ("  {:^150}  ".format('\033[1;31m"PROGRESSÃO ARITMÉTICA - PA."\033[m'))
-print('=' * 312)  
+print('\033[1;34m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
-n1 = float(input('\033[1;31mQual o valor do primeiro Termo?\033[m '))
-n2 = float(input('\033[1;31mQual é a Razão? \033[m '))
+a = float(input('\033[1;33mQual o valor do primeiro Termo?\033[m '))
+r = float(input('\033[1;33mQual é a Razão? \033[m '))
+n = float(input('\033[1;33mQual é a quantidade de termos? \033[m '))
 
-for c in range (n1, n1+n2):
-    print(n , n+1 )
+cont =  0
+for c in range (a, n):
 
+    
+    cont += 1
+
+    (a + (n - 1)) * r
+    print(a , n )
 
 
 #+++++
