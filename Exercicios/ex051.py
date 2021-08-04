@@ -16,18 +16,16 @@ print('\033[1;34m=\033[m' * 312)
 print (' ')
 
 """#############################################################################################################"""
-a = float(input('\033[1;33mQual o valor do primeiro Termo?\033[m '))
-r = float(input('\033[1;33mQual é a Razão? \033[m '))
-n = float(input('\033[1;33mQual é a quantidade de termos? \033[m '))
-
+a = int(input('\033[1;33mQual o valor do primeiro Termo?\033[m '))
+r = int(input('\033[1;33mQual é a Razão? \033[m '))
+n = int(input('\033[1;33mQual é a quantidade de termos? \033[m '))
+an = (a + (n - 1)) * r
 cont =  0
-for c in range (a, n):
+for c in range (a, an, r):
+    print('')
 
-    
-    cont += 1
 
-    (a + (n - 1)) * r
-    print(a , n )
+print('{} , {}, {}'.format(a, an, r))
 
 
 #+++++
