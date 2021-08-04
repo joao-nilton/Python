@@ -19,13 +19,12 @@ print (' ')
 a = int(input('\033[1;33mQual o valor do primeiro Termo?\033[m '))
 r = int(input('\033[1;33mQual é a Razão? \033[m '))
 n = int(input('\033[1;33mQual é a quantidade de termos? \033[m '))
-an = (a + (n - 1)) * r
+an = a + (n - 1) * r
 cont =  0
 for c in range (a, an, r):
-    print('')
-
-
-print('{} , {}, {}'.format(a, an, r))
+    cont += 1
+ 
+print('O primeiro termo é {}, a razão é {} e o último termo vale {}'.format(a,r, an ))
 
 
 #+++++
