@@ -9,24 +9,19 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE REAJUSTE SALARIAL."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
-print("\n" * 1)
-print('=' * 40)
-print('Cálculo de reajuste salarial') 
-print('=' * 40)
-print("\n" * 1)
 
-v = float(input('Digite o valor do salário atual em Reais: '))
-d = float(input('Digite o valor do reajuste salarial em porcentagem: '))
+v = float(input('\033[1;31mDigite o valor do salário atual em Reais: \033[m'))
+d = float(input('\033[1;33mDigite o valor do reajuste salarial em porcentagem: \033[m'))
 p =  (v * d) / 100
 pg = v + p  # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
 
 
-print('O valor corrigido do salário e de R$ {:.2f}'.format(pg))
+print('\033[1;34mO valor corrigido do salário e de R$ {:.2f}\033[m'.format(pg))
 print("\n" * 1)
 print('=' * 40)
 
