@@ -9,36 +9,16 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"ALUGUEL DE CARRO"\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
-'''print("\n" * 1)
-print('=' * 40)
-print('Aluguel de carro ') 
-print('=' * 40)
-print("\n" * 1)
-
-v = int(input('Digite quantos dias vai alugar o carro: '))
-d = float(input('Digite o valor da diária: '))
-s =  v * d
-
-print('Você deverá pagar R$ {:.2f}  '.format(s))
-print("\n" * 1)
-print('=' * 40)'''
-
-print("\n" * 1)
-print('=' * 40)
-print('Aluguel de carro ') 
-print('=' * 40)
-print("\n" * 1)
-
-v = int(input('Digite quantos dias vai alugar o carro: '))
-k = float(input('Digite quantos quilometros o carro rodou: '))
-d = float(input('Digite o valor da diária: '))
-e = float(input('Digite o valor por quilometro rodado: '))
+v = int(input('\033[1;30mDigite quantos dias vai alugar o carro: \033[m'))
+k = float(input('\033[1;34mDigite quantos quilometros o carro rodou: \033[m'))
+d = float(input('\033[1;33mDigite o valor da diária: \033[m'))
+e = float(input('\033[1;32mDigite o valor por quilometro rodado: \033[m'))
 s =  v * d
 ss = k * e
 t = s + ss
