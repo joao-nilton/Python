@@ -16,6 +16,8 @@ print('\033[1;34m=\033[m' * 312)
 print (' ')
 
 """#############################################################################################################"""
+
+'''
 a = int(input('\033[1;33mQual o valor do primeiro Termo?\033[m '))
 r = int(input('\033[1;33mQual é a Razão? \033[m '))
 n = int(input('\033[1;33mQual é a quantidade de termos? \033[m '))
@@ -23,11 +25,19 @@ print(' ')
 an = a + (n - 1) * r
 for c in range (a, an + r, r):
     print (c, end='  ->  ')
+print('FIM.')
 print(' ')
+'''
 
+# Solução Guanabara
 
-# print('O primeiro termo é {}, a razão é {} e o último termo vale {}'.format(a,r, ))
-
+primeiro = int(input('\033[1;33mPrimeiro termo: \033[m '))
+razao = int(input('\033[1;33mRazão:  \033[m '))
+decimo = primeiro + (10 - 1) * razao
+for c in range (primeiro, decimo, razao):
+    print('{}'.format(c), end=' -> ')
+print('ACABOU')
+print(' ')
 
 #+++++
 
