@@ -16,16 +16,16 @@ print (' ')
 """#############################################################################################################"""
 
 
-v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
-d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
-p =  (v * d) / 100
-pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
-
-print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
-print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
-print("\n" * 1)
-print('=' * 40)
-
+numero = int(input('\033[1;33mDigite o numero: \033[m '))
+#razao = int(input('\033[1;33mRazão:  \033[m '))
+#decimo = primeiro + (10 - 1) * razao
+print(' ')
+for c in range (0, numero + 1):
+    print('{}'.format(c), end=' ')
+    if numero == numero and numero % numero == 0:
+        print('É Primo')
+print(' ')
+print(' ')
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
 # print(n, end=' ')
