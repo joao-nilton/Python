@@ -9,23 +9,66 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"NÚMEROS PRIMOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
+import math
+
+print('=' * 40)
+print('Este é um medidor de seno, cosseno e tangente a partir do angulo em graus.') 
+print('=' * 40)
+
+an = float(input('Digite o o valor do angulo em graus: '))
+x = an * math.pi/180
+s = math.sin(x)
+c = math.cos(x)
+t = math.tan(x)
+
+print('O valor do seno  é {:.3f}'.format(s))
+print('O valor do coseno  é {:.3f}'.format(c))
+print('O valor da tangente  é {:.3f}'.format(t))
+print('=' * 40)
+
+''' degrees = r * 180/pi e radians = degre * pi/180 '''
 
 
-numero = int(input('\033[1;33mDigite o numero: \033[m '))
-#razao = int(input('\033[1;33mRazão:  \033[m '))
-#decimo = primeiro + (10 - 1) * razao
-print(' ')
-for c in range (0, numero + 1):
-    print('{}'.format(c), end=' ')
-    if numero == 1 and numero / numero == 0:
-        print('É Primo')
-print(' ')
-print(' ')
+'''
+print('=' * 40)
+print('Este é um medidor de seno, cosseno e tangente a partir do angulo em graus.') 
+print('=' * 40)
+
+import math
+
+an = float(input('Digite o o valor do angulo em graus: '))
+seno = math.sin(math.radians(an))
+cosseno = math.cos(math.radians(an))
+tangente = math.tan(math.radians(an))
+
+print('O angulo de {} tem o seno de {}'.format(an, seno))
+print('O angulo de {} tem o cossseno de {}'.format(an, cosseno))
+print('O angulo de {} tem a tangente de {}'.format(an, tangente))'''
+
+print('=' * 40)
+print('Este é um medidor de seno, cosseno e tangente a partir do angulo em graus.') 
+print('=' * 40)
+
+from math import radians, sin, cos, tan
+
+an = float(input('Digite o o valor do angulo em graus: '))
+seno = sin(math.radians(an))
+cosseno = cos(math.radians(an))
+tangente = tan(math.radians(an))
+
+print('O angulo de {} tem o seno de {}'.format(an, seno))
+print('O angulo de {} tem o cossseno de {}'.format(an, cosseno))
+print('O angulo de {} tem a tangente de {}'.format(an, tangente))
+
+print('=' * 40)
+print('=' * 40)
+
+
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
 # print(n, end=' ')
