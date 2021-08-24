@@ -20,10 +20,18 @@ numero = int(input('\033[1;33mDigite o numero: \033[m '))
 #razao = int(input('\033[1;33mRazão:  \033[m '))
 #decimo = primeiro + (10 - 1) * razao
 print(' ')
-for c in range (0, numero + 1):
-    print('{}'.format(c), end=' ')
-    if numero == 1 and numero / numero == 1:
-        print('É Primo')
+for c in range (1, numero + 1):
+   # print('{}'.format(c), end=' ')
+    if numero%c == 0:
+        p = c
+        print('\033[1;31m{}\033[m'.format(p))
+        
+    else:
+        numero%c == 1
+        p1 = c
+        print(p1, end=' ')
+        
+print('\033[1;34m{}\033[m'.format(p))
 print(' ')
 print(' ')
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
