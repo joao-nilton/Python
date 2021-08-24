@@ -22,7 +22,7 @@ numero = int(input('\033[1;33mDigite o numero: \033[m '))
 print(' ')
 for c in range (0, numero + 1):
     print('{}'.format(c), end=' ')
-    if numero == 1 and numero / numero == 0:
+    if numero == 1 and numero / numero == 1:
         print('É Primo')
 print(' ')
 print(' ')

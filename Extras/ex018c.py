@@ -61,9 +61,9 @@ seno = sin(math.radians(an))
 cosseno = cos(math.radians(an))
 tangente = tan(math.radians(an))
 
-print('O angulo de {} tem o seno de {}'.format(an, seno))
-print('O angulo de {} tem o cossseno de {}'.format(an, cosseno))
-print('O angulo de {} tem a tangente de {}'.format(an, tangente))
+print('\033[1;32mO angulo de\033[m   \033[1;34m{}\033[m    \033[1;32mtem o seno de\033[m     \033[1;34m{}\033[m'.format(an, seno))
+print('\033[1;32mO angulo de\033[m   \033[1;34m{}\033[m    \033[1;32mtem o cossseno de\033[m \033[1;34m{}\033[m'.format(an, cosseno))
+print('\033[1;32mO angulo de\033[m   \033[1;34m{}\033[m    \033[1;32mtem a tangente de\033[m \033[1;34m{}\033[m'.format(an, tangente))
 
 print('=' * 40)
 print('=' * 40)
