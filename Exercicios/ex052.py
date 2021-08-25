@@ -24,12 +24,12 @@ for c in range (1, numero + 1):
    # print('{}'.format(c), end=' ')
     if numero%c == 0:
         p = c
-        print('\033[1;31m{}\033[m'.format(p, end=' '))
+        print('\033[1;31m{}\033[m'.format(p))
         
     else:
         numero%c == 1
         p1 = c
-        print(p1)
+        print(p1, end = ' - ')
 
 print(' ')
 print(' ')
