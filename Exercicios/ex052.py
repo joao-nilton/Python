@@ -24,14 +24,13 @@ for c in range (1, numero + 1):
    # print('{}'.format(c), end=' ')
     if numero%c == 0:
         p = c
-        print('\033[1;31m{}\033[m'.format(p))
+        print('\033[1;31m{}\033[m'.format(p, end=' '))
         
     else:
         numero%c == 1
         p1 = c
-        print(p1, end=' ')
-        
-print('\033[1;34m{}\033[m'.format(p))
+        print(p1)
+
 print(' ')
 print(' ')
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
