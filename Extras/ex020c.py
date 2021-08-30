@@ -9,31 +9,23 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"NÚMEROS PRIMOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
 
-numero = int(input('\033[1;33mDigite o numero: \033[m '))
-#razao = int(input('\033[1;33mRazão:  \033[m '))
-#decimo = primeiro + (10 - 1) * razao
-print(' ')
-for c in range (1, numero + 1):
-   # print('{}'.format(c), end=' ')
-    if numero%c == 0:
-        p = c
-        print('\033[1;31m{}\033[m'.format(p))
-     # Nào estou conseguindo formatar. Hj tem eletromag. Vou só Gitar   
-     # Nào estou conseguindo formatar. Hj tem filosofia Vou só Gitar   30/08/21
-    else:
-        numero%c == 1
-        p1 = c
-        print(p1, end = ' - ')
+v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
+d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
+p =  (v * d) / 100
+pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
 
-print(' ')
-print(' ')
+print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
+print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
+print("\n" * 1)
+print('=' * 40)
+
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
 # print(n, end=' ')
