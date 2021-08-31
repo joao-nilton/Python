@@ -15,16 +15,19 @@ print (' ')
 
 """#############################################################################################################"""
 
+from random import shuffle
 
-v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
-d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
-p =  (v * d) / 100
-pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
+a1 = input('Digite o nome do aluno 1: ')
+a2 = input('Digite o nome do aluno 2: ')
+a3 = input('Digite o nome do aluno 3: ')
+a4 = input('Digite o nome do aluno 4: ')
 
-print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
-print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
-print("\n" * 1)
-print('=' * 40)
+palavras = [a1, a2, a3, a4 ]
+
+shuffle(palavras)
+
+print (' ')
+print('Os (As) aluno(s)(as) apresentarão na seguintre sequência {}: '.format(palavras))
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
