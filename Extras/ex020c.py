@@ -9,7 +9,7 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"Ordem de apresentação"\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
@@ -17,17 +17,17 @@ print (' ')
 
 from random import shuffle
 
-a1 = input('Digite o nome do aluno 1: ')
-a2 = input('Digite o nome do aluno 2: ')
-a3 = input('Digite o nome do aluno 3: ')
-a4 = input('Digite o nome do aluno 4: ')
+a1 = input('\033[1;33mDigite o nome do aluno 1: \033[m')
+a2 = input('\033[1;33mDigite o nome do aluno 2: \033[m')
+a3 = input('\033[1;33mDigite o nome do aluno 3: \033[m')
+a4 = input('\033[1;33mDigite o nome do aluno 4: \033[m')
 
-palavras = [a1, a2, a3, a4 ]
+palavras = [a1, a2, a3, a4]
 
 shuffle(palavras)
 
 print (' ')
-print('Os (As) aluno(s)(as) apresentarão na seguintre sequência {}: '.format(palavras))
+print('\033[1;34mOs (As) aluno(s)(as) apresentarão na seguinte sequência {}: \033[m'.format(palavras))
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))

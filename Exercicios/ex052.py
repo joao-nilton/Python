@@ -24,16 +24,18 @@ for c in range (1, numero + 1):
    # print('{}'.format(c), end=' ')
     if numero%c == 0:
         p = c
-        print('\033[1;31m{}\033[m'.format(p))
+        print('\033[1;31m{}\033[m'.format(p), end =' ')
+
      # Nào estou conseguindo formatar. Hj tem eletromag. Vou só Gitar   
      # Nào estou conseguindo formatar. Hj tem filosofia Vou só Gitar   30/08/21
     else:
         numero%c == 1
         p1 = c
-        print(p1, end = ' - ')
+        print(p1, end = ' ')
+print('\n\nOs números em vermelho são divisores do número digitado.')
+print(' ')
+print(' ')
 
-print(' ')
-print(' ')
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
 # print(n, end=' ')
