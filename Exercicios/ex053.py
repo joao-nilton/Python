@@ -15,8 +15,30 @@ print (' ')
 # errei o commit em 03092021
 """#############################################################################################################"""
 
+print (' ')
+print('=' * 40)
+print('Este é um conversor e contador de caracteres') 
+print('=' * 40)
+frase = input('Digite seu nome: ').strip().replace(" ", "")
+frase1 = frase [: : -1]
+print (' ')
+print('Você digitou: {} e {}'.format(frase.upper(), frase1))
+'''
+print('O seu nome em minúsculas é: {}'.format(frase.lower()))
+print (' ')
+print('=' * 40)
+nnome = len(frase.replace(" ",""))
+nomed = frase.split()
+numdi = len(nomed[0])
+print('O seu nome tem  {} letras e o seu primeiro nome tem {} letras'.format(nnome, numdi))
+print (' ')
+print('=' * 40)
+print (' ')
+print('Ou ...')
+print('Seu nome tem ao todo {} letras '.format(len(frase) - frase.count(' ')))
+print('Seu primeiro nome tem {} letras'.format(frase.find(' ')))
 
-
+'''
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
