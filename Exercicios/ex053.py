@@ -35,3 +35,6 @@ else:
 #print('O triplo de \033[1;31m{}\033[m é \033[1;34m{}\033[m'.format (n, t))
 #print('A raiz quadrade de \033[1;31m{}\033[m é \033[1;35m{}\033[m'.format (n, s))
 #print('Á soma entre {}{}{} e {}{}{} é {}{}{}'.format (cores['mangenta'],n1, cores['limpa'] ,cores['verde'],n2, cores['limpa'],cores['amarelo'],n1+n2, cores['limpa']))
+
+
+# 100921 - só pra gittar.

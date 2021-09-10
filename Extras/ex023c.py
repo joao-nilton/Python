@@ -9,30 +9,24 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"ANALISANDO NÚMEROS."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
-frase = input('\033[1;33mDigite seu nome: \033[m').strip()
-print (' ')
-print('\033[1;31mO seu nome em maiúsculas é: {}\033[m'.format(frase.upper()))
-print('\033[1;31mO seu nome em minúsculas é: {}\033[m'.format(frase.lower()))
-print (' ')
-print('=' * 40)
-print (' ')
-nnome = len(frase.replace(" ",""))
-nomed = frase.split()
-numdi = len(nomed[0])
-print('\033[1;32mO seu nome tem  {} letras e o seu primeiro nome tem {} letras\033[m'.format(nnome, numdi))
-print (' ')
-print('=' * 40)
-print (' ')
-print('\033[1;33mOu ...\033[m')
-print('\033[1;35mSeu nome tem ao todo {} letras \033[m'.format(len(frase) - frase.count(' ')))
-print('\033[1;35mSeu primeiro nome tem {} letras\033[m'.format(frase.find(' ')))
-print (' ')
+
+num = int(input('Informe um número de 0 a 9999: '))
+n = str(num)
+print('Analisando o número {}'.format(num))
+print('Unidade: {} '.format(n[3]))
+print('Dezena: {}'.format(n[2]))
+print('centena: {}'.format(n[1]))
+print('milhar: {}'.format(n[0]))
+
+# Esse de cima ainda está com erro. Precisa de estruturaas condicionais. Não é a melhor maneira nesse momento.
+
+
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
