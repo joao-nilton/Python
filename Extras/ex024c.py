@@ -9,24 +9,22 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"ANALISANDO NÚMEROS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
 
-num = int(input('Informe um número de 0 a 9999: '))
-n = str(num)
-print('\033[1;33mAnalisando o número\033[m \033[1;31m{}\033[m'.format(num))
-print('\033[1;33mUnidade:\033[m \033[1;31m{}\033[m '.format(n[3]))
-print('\033[1;33mDezena:\033[m \033[1;31m{}\033[m'.format(n[2]))
-print('\033[1;33mcentena:\033[m \033[1;31m{}\033[m'.format(n[1]))
-print('\033[1;33mmilhar:\033[m \033[1;31m{}\033[m'.format(n[0]))
+v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
+d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
+p =  (v * d) / 100
+pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
 
-# Esse de cima ainda está com erro. Precisa de estruturaas condicionais. Não é a melhor maneira nesse momento.
-
-
+print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
+print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
+print("\n" * 1)
+print('=' * 40)
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))

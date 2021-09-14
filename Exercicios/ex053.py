@@ -25,6 +25,7 @@ if str(frase) == str(frase) [: : -1]:
 else:
      print('o texto digitado não é um PALINDROMO')
 
+'''
 
 # VERSÃO GUANABARA
 print (' ')
@@ -32,9 +33,10 @@ frase = str(input('Digite seu texto: ')).strip().upper()
 palavras = frase.split()
 junto = ''.join(palavras)
 inverso = ''
-print('o inverso de {} é {}'.format(junto, inverso))
+
 for letra in range(len(junto) -1, -1, -1):
     inverso += junto[letra]
+print('o inverso de {} é {}'.format(junto, inverso))
 if inverso == junto:
     print('Temos um palíndromo') 
 else:
@@ -54,6 +56,7 @@ if inverso == junto:
 else:
     print('A frase digitada nao é um palíndromo. ')  
 print (' ')
+'''
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
