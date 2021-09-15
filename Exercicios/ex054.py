@@ -9,25 +9,23 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"TEM SANTO NO NOME?."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"CÁLCULO MAIOR IDADE."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
 print (' ')
-print('=' * 40)
-print('Programa para saber se o nome da cidade começa com o nome SANTO')
-print('=' * 40)
+frase = input('Digite seu texto: ').strip().replace(" ", "")
+frase1 = frase [: : -1]
 print (' ')
+print('Você digitou: {} que ao contrário é {}'.format(frase.upper(), frase1.upper()))
+print (' ')
+if str(frase) == str(frase) [: : -1]:
+    print('o texto digitado é um PALINDROMO')
+else:
+     print('o texto digitado não é um PALINDROMO')
 
-nome = str(input( 'Digite o nome da cidade em que você nasceu: ')).strip()
-
-
-print(nome[:5].upper() == 'SANTO')
-print('=' * 40)
-#print(nome.upper().count('SANTO')) 
-#print('SANTO'in nome)
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
