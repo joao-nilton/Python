@@ -14,18 +14,28 @@ print('\033[1;36m=\033[m' * 312)
 print (' ')
 
 """#############################################################################################################"""
+# Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
+from datetime import date
+
+data_atual = date.today()
+
+print(data_atual)
 
 print (' ')
-frase = input('Digite seu texto: ').strip().replace(" ", "")
-frase1 = frase [: : -1]
-print (' ')
-print('Você digitou: {} que ao contrário é {}'.format(frase.upper(), frase1.upper()))
-print (' ')
-if str(frase) == str(frase) [: : -1]:
-    print('o texto digitado é um PALINDROMO')
+name = input('Digite o seu nome: ')
+birth = input('Digite o ano em que você nasceu: ')
+age = date.today() - birth
+print(age)
+'''
+for c in range(0, 18):
+    if c < 18:
+        print('Você é menor de idade')
 else:
-     print('o texto digitado não é um PALINDROMO')
+    print('Você é maior de idade')        
 
+print('Voce {} tem {} anos e é menor de idade'.format(name, age))
+
+'''
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))

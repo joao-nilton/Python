@@ -16,16 +16,15 @@ print (' ')
 """#############################################################################################################"""
 
 print (' ')
-print('=' * 40)
-print('Programa para saber se o nome da cidade começa com o nome SANTO')
-print('=' * 40)
-print (' ')
 
-nome = str(input( 'Digite o nome da cidade em que você nasceu: ')).strip()
+nome = str(input( '\033[1;34mDigite o nome da cidade em que você nasceu: \033[m')).strip()
 
-
-print(nome[:5].upper() == 'SANTO')
+if nome[:5].upper() == 'SANTO':
+    print('A cidade possui SANTO no nome.')
+else:
+    print('A cidade não possui SANTO no nome.')
 print('=' * 40)
+
 #print(nome.upper().count('SANTO')) 
 #print('SANTO'in nome)
 
