@@ -15,6 +15,7 @@ print (' ')
 
 """#############################################################################################################"""
 # Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
+import datetime
 from datetime import date
 
 data_atual = date.today()
@@ -22,10 +23,39 @@ data_atual = date.today()
 print(data_atual)
 
 print (' ')
-name = input('Digite o seu nome: ')
-birth = input('Digite o ano em que você nasceu: ')
-age = date.today() - birth
-print(age)
+for c in range (0,2):
+    name = input('Digite o seu nome: ')
+    dataNasc = int(input('Digite o ano em que você nasceu: '))
+    dataAtual = int(input('Digite o ano atual: '))
+    age = dataAtual - dataNasc
+    print (' ')
+    if age <= 18:
+        sel = name
+    else:
+        sel1 = name
+        print (' ')
+print ('{} '.format(sel))
+#print ('{} '.format(sel1))
+
+
+
+#ano = eval (input ("Nasceu em que ano? "))
+#mes = eval (input ("Nasceu em que mês? "))
+#dia = eval (input ("Nasceu em que dia? "))
+#ano_atual = eval (input ("Ano atual? "))
+#mes_atual = eval (input ("Mês atual? "))
+#dia_atual = eval (input ("Dia atual? "))
+#dataNasc = datetime.date(ano)
+#dataAtual = datetime.date(ano_atual)
+
+#diferença retorna em timedelta
+#diferenca = dataAtual - dataNasc
+#Cálculos e Resultados
+    #rslt = (diferenca.days / 365.25)
+#ano_atual-ano
+
+#print(diferenca)
+
 '''
 for c in range(0, 18):
     if c < 18:
