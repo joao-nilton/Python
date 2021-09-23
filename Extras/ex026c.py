@@ -24,9 +24,9 @@ print (' ')
 
 nome = str(input( 'Digite uma frase:  ')).strip()
 
-print('A letra A aparece {} vezes na frase'.format(nome.upper().count('A')))
-print('A primeira letre A apareceu na posicão {}'.format(nome.upper().find('A')+1))
-print('A última letra A apareceu na posição {}'.format(nome.upper().rfind('A')+1))
+print('\033[1;33mA letra A aparece \033[1;31m{}\033[m veze(s) na frase\033[m'.format(nome.upper().count('A')))
+print('\033[1;33mA primeira letre A apareceu na posicão \033[1;31m{}\033[m\033[m'.format(nome.upper().find('A')+1))
+print('\033[1;33mA última letra A apareceu na posição \033[1;31m{}\033[m\033[m'.format(nome.upper().rfind('A')+1))
 
 
 print('=' * 40)
