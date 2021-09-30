@@ -9,21 +9,20 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"Programa para analisar o primeiro e último nome de uma pessoa."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
 
-v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
-d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
-p =  (v * d) / 100
-pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
+nome = str(input( '\033[1;33mDigite um nome:  \033[m')).strip().split()
+print (' ')
+print('\033[1;34mSeu primeiro nome é\033[m \033[1;31m{}\033[m'.format(nome[0]))
+print (' ')
+print('\033[1;35mSeu último nome é\033[m \033[1;31m{}\033[m'.format(nome[len(nome)-1])) # [] -> define uma lista em python
+print (' ')
 
-print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
-print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
-print("\n" * 1)
 print('=' * 40)
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
