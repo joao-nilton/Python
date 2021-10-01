@@ -9,71 +9,22 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO MAIOR IDADE."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
-# Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
-import datetime
-from datetime import date
 
-data_atual = date.today()
 
-print(data_atual)
+v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
+d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
+p =  (v * d) / 100
+pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
 
-print (' ')
-for c in range (0,2):
-    name = input('Digite o seu nome: ')
-    dataNasc = int(input('Digite o ano em que você nasceu: '))
-    dataAtual = int(input('Digite o ano atual: '))
-    age = dataAtual - dataNasc
-   
-    sel1= 0
-    print (' ')
-    if age <= 18:
-        sel = name
-    else:
-        sel1 = name
-        print (' ')
-print ('{} e {}'.format(sel, sel1))
-#print ('{} '.format(sel1))
-
-# Só pra gittar em 21-09-21
-# Só pra gittar em 22-09-21
-# Só pra gittar em 23-09-21
-# Só pra gittar em 27-09-21
-# Só pra gittar em 28-09-21
-# Só pra gittar em 30-09-21
-# Só pra gittar em 01-10-21
-
-#ano = eval (input ("Nasceu em que ano? "))
-#mes = eval (input ("Nasceu em que mês? "))
-#dia = eval (input ("Nasceu em que dia? "))
-#ano_atual = eval (input ("Ano atual? "))
-#mes_atual = eval (input ("Mês atual? "))
-#dia_atual = eval (input ("Dia atual? "))
-#dataNasc = datetime.date(ano)
-#dataAtual = datetime.date(ano_atual)
-
-#diferença retorna em timedelta
-#diferenca = dataAtual - dataNasc
-#Cálculos e Resultados
-    #rslt = (diferenca.days / 365.25)
-#ano_atual-ano
-
-#print(diferenca)
-
-'''
-for c in range(0, 18):
-    if c < 18:
-        print('Você é menor de idade')
-else:
-    print('Você é maior de idade')        
-
-print('Voce {} tem {} anos e é menor de idade'.format(name, age))
-
-'''
+print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
+print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
+print("\n" * 1)
+print('=' * 40)
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
