@@ -9,22 +9,34 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"ACERTANDO UM NÚMERO DE 0 A 5."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
+from random import randint
+from time import sleep
+print (' ')
+print('=--=' * 20)
+print('JOGO DA ADIVINHAÇÃO')
+print('=--=' * 20)
+print('Vou pensar num número entre 0 e 5. Tente adivinhar...')
+print('+--+' * 20)
+print (' ')
 
-v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
-d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
-p =  (v * d) / 100
-pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
+num = int(input('Em que número eu pensei? '))
+print('PROCESSANDO...')
+sleep(3)
+#num1 = random.randint(0, 5)
+num1 = randint(0, 5)
 
-print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
-print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
-print("\n" * 1)
-print('=' * 40)
+if num != num1:
+    print('GANHEI! Eu pensei no número {} e não no {}'.format(num1, num))
+else:
+    print('PARABÉNS! Você conseguiu me vencer! Eu tambem pensei no número {}'.format(num))
+    
+print (' ')
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
