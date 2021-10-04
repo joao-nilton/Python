@@ -19,14 +19,17 @@ from random import randint
 from time import sleep
 print (' ')
 print('=--=' * 20)
-print('JOGO DA ADIVINHAÇÃO')
+print('\033[1;34mJOGO DA ADIVINHAÇÃO\033[m')
 print('=--=' * 20)
-print('Vou pensar num número entre 0 e 5. Tente adivinhar...')
-print('+--+' * 20)
+print('\033[1;35mVou pensar num número entre 0 e 5. Tente adivinhar...\033[m')
+print('\033[1;36m+--+\033[m' * 20)
 print (' ')
 
-num = int(input('Em que número eu pensei? '))
-print('PROCESSANDO...')
+num = int(input('\033[1;37mEm que número eu pensei? \033[m'))
+print (' ')
+print('\033[1;31mPROCESSANDO...')
+print (' ')
+
 sleep(3)
 #num1 = random.randint(0, 5)
 num1 = randint(0, 5)
@@ -34,7 +37,7 @@ num1 = randint(0, 5)
 if num != num1:
     print('GANHEI! Eu pensei no número {} e não no {}'.format(num1, num))
 else:
-    print('PARABÉNS! Você conseguiu me vencer! Eu tambem pensei no número {}'.format(num))
+    print('PARABÉNS! Você conseguiu me vencer! Eu tambem pensei no número {}\033[m'.format(num))
     
 print (' ')
 
