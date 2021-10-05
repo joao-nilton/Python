@@ -9,73 +9,44 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO MAIOR IDADE."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
-# Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
-import datetime
-from datetime import date
-
-data_atual = date.today()
-
-print(data_atual)
-
 print (' ')
-for c in range (0,2):
-    name = input('Digite o seu nome: ')
-    dataNasc = int(input('Digite o ano em que você nasceu: '))
-    dataAtual = int(input('Digite o ano atual: '))
-    age = dataAtual - dataNasc
-
-    print (' ')
-    if age <= 18:
-        sel = name
-    else:
-        print(name)
+print('=--=' * 20)
+print('RADAR ELETRÔNICO')
+print('=--=' * 20)
+print(' ')
+print('+--+' * 20)
 print (' ')
-print ('{} e {}'.format(sel, age))
-#print ('{} '.format(sel1))
 
-# Só pra gittar em 21-09-21
-# Só pra gittar em 22-09-21
-# Só pra gittar em 23-09-21
-# Só pra gittar em 27-09-21
-# Só pra gittar em 28-09-21
-# Só pra gittar em 30-09-21
-# Só pra gittar em 01-10-21
-# Só pra gittar em 02-10-21
-# Só pra gittar em 04-10-21
+num = int(input('Qual é a velocidade atual do carro? '))
 
 
-#ano = eval (input ("Nasceu em que ano? "))
-#mes = eval (input ("Nasceu em que mês? "))
-#dia = eval (input ("Nasceu em que dia? "))
-#ano_atual = eval (input ("Ano atual? "))
-#mes_atual = eval (input ("Mês atual? "))
-#dia_atual = eval (input ("Dia atual? "))
-#dataNasc = datetime.date(ano)
-#dataAtual = datetime.date(ano_atual)
 
-#diferença retorna em timedelta
-#diferenca = dataAtual - dataNasc
-#Cálculos e Resultados
-    #rslt = (diferenca.days / 365.25)
-#ano_atual-ano
 
-#print(diferenca)
+num1 = num - 80
 
-'''
-for c in range(0, 18):
-    if c < 18:
-        print('Você é menor de idade')
+
+
+if num <= 80:
+    print('Tenha um bom dia! Dirija com segurança')
+elif num <= 100:
+    vm = float(input('Qual é o valor da multa por quilômetro excedido: '))
+    num2 = num1 * vm
+    print('MULTADO! Você excedeu o limite de velocidade que é de 80Km/h')
+    print('Voce deve pagar uma multa de  R$: {:.2f}'.format(num2))
+    
 else:
-    print('Você é maior de idade')        
+    vm1 =float(input('Qual é o valor da multa por quilômetro excedido acima de  100Km/h: '))
+    num3 = num1 * vm1
+    print('MULTADO! Você excedeu o limite de velocidade que é de 80Km/h')
+    print('Voce deve pagar uma multa de  R$: {:.2f}'.format(num3))
+print (' ')
 
-print('Voce {} tem {} anos e é menor de idade'.format(name, age))
 
-'''
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
