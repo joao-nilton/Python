@@ -9,21 +9,21 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"RADAR ELETRÔNICO."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 print (' ')
-print('=--=' * 20)
+print('\033[1;33m=--=\033[m' * 20)
 print('RADAR ELETRÔNICO')
-print('=--=' * 20)
+print('\033[1;33m=--=\033[m' * 20)
 print(' ')
-print('+--+' * 20)
+print('\033[1;31m+--+\033[m' * 20)
 print (' ')
 
 num = int(input('Qual é a velocidade atual do carro? '))
-
+print (' ')
 
 
 

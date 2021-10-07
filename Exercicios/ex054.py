@@ -31,9 +31,9 @@ for c in range (0,2):
 
     print (' ')
     if age <= 18:
-        sel = name
+         print(name)
     else:
-        print(name)
+       
 print (' ')
 print ('{} e {}'.format(sel, age))
 #print ('{} '.format(sel1))
@@ -47,7 +47,7 @@ print ('{} e {}'.format(sel, age))
 # Só pra gittar em 01-10-21
 # Só pra gittar em 02-10-21
 # Só pra gittar em 04-10-21
-
+# Só pra gittar em 07-10-21
 
 #ano = eval (input ("Nasceu em que ano? "))
 #mes = eval (input ("Nasceu em que mês? "))
