@@ -15,7 +15,22 @@ print (' ')
 
 """#############################################################################################################"""
 
+print (' ')
+print('=--=' * 20)
+print('\033[1;33mPAR OU IMPAR\033[m')
+print('=--=' * 20)
+print (' ')
+num = float(input('\033[1;31mMe diga um número qualquer: \033[m'))
+num1 = num % 2 
+print (' ')
+if num1 == 0:
+    print('\033[1;35mO número\033[m {} \033[1;36mé PAR \033[m'.format(num))
+else:
+    print('\033[1;35mO número\033[m {} \033[1;36mé IMPAR '.format(num))
+    
+print (' ')
 
+# Este funcionou bem. Vamos gitar
 
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 

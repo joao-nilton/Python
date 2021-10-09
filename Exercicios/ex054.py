@@ -49,6 +49,7 @@ print ('{} e {}'.format(sel, age))
 # Só pra gittar em 04-10-21
 # Só pra gittar em 07-10-21
 # Só pra gittar em 08-10-21
+# Só pra gittar em 09-10-21
 
 #ano = eval (input ("Nasceu em que ano? "))
 #mes = eval (input ("Nasceu em que mês? "))
