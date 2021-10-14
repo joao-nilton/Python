@@ -9,13 +9,37 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"PASSAGEM RODOVIÁRIA"\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
+print (' ')
+print('\033[1;33m=--=\033[m' * 20)
+print('\033[1;36mPREÇO DA PASSAGEM RODOVIÁRIA\033[m')
+print('\033[1;33m=--=\033[m' * 20)
 
+'''num = float(input('Qual a distância de sua viagem? '))
+
+
+if num <= 200:
+    print('Você está prestes a iniciar uma viagem de {} Km'.format(num))
+    num1 = num * 0.50
+    print('E o preço da passagem é de {} Reais'.format(num1))
+else:
+    print('Você está prestes a iniciar uma viagem de {} Km'.format(num))
+    num2 = num * 0.45
+    print('E o preço da passagem é de {} Reais'.format(num2))'''
+
+print('OU...')
+
+distancia = float(input('Qual é a distância da sua viagem? '))
+print('Você esta prestes a iniciar uma viagem de {}Km'.format(distancia))
+preco = distancia * .50 if distancia <= 200 else distancia * .45
+print('E o preço de sua passagem sera de R$ \033[1;34m{:.2f}\033[m'.format(preco))
+
+print (' ')
 
 
 
