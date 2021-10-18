@@ -1,4 +1,20 @@
-# style --> 0 ,1 , 4, 7     0 = none    1 = bold    4 = underline       7 = negativo    3 = itálico
+print (' ')
+print('=--=' * 20)
+print('ANO BISSEXTO')
+print('=--=' * 20)
+from datetime import date
+
+ano = int(input('Que ano quer analisar ? Coloque 0 para analisar o ano atual.'))
+print (' ')
+if ano == 0:
+    ano = date.today().year
+if (ano%4==0 and ano%100!=0) or (ano%400==0):
+    print('O ano {} é BISSEXTO'.format(ano))
+else:
+    print('O ano {} NÃO É BISSEXTO'.format(ano))
+
+
+    # style --> 0 ,1 , 4, 7     0 = none    1 = bold    4 = underline       7 = negativo    3 = itálico
 # text --> 30 = branco      31 = vermelho   32 = verde  33 = amarelo    34 = azul   35 = vmagenta    36 = ciano 37 = cinza
 # back (background) mesma do text mas de 40 a 47
 # print('{} Muito prazer em te conhecer! {} SSS '.format(cores['pretoebranco'], cores['limpa']))
@@ -9,39 +25,22 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"PASSAGEM RODOVIÁRIA"\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
-print (' ')
-print('\033[1;33m=--=\033[m' * 20)
-print('\033[1;36mPREÇO DA PASSAGEM RODOVIÁRIA\033[m')
-print('\033[1;33m=--=\033[m' * 20)
 
-'''num = float(input('Qual a distância de sua viagem? '))
+v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
+d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
+p =  (v * d) / 100
+pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
 
-
-if num <= 200:
-    print('Você está prestes a iniciar uma viagem de {} Km'.format(num))
-    num1 = num * 0.50
-    print('E o preço da passagem é de {} Reais'.format(num1))
-else:
-    print('Você está prestes a iniciar uma viagem de {} Km'.format(num))
-    num2 = num * 0.45
-    print('E o preço da passagem é de {} Reais'.format(num2))'''
-
-print('OU...')
-
-distancia = float(input('\033[1;37mQual é a distância da sua viagem? \033[m'))
-print('\033[1;36mVocê esta prestes a iniciar uma viagem de\033[m {}Km'.format(distancia))
-preco = distancia * .50 if distancia <= 200 else distancia * .45
-print('\033[1;35mE o preço de sua passagem sera de R$\033[m \033[1;34m{:.2f}\033[m'.format(preco))
-
-print (' ')
-
-
+print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
+print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
+print("\n" * 1)
+print('=' * 40)
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))

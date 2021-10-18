@@ -23,7 +23,7 @@ data_atual = date.today()
 print(data_atual)
 
 print (' ')
-for c in range (0,4):
+for c in range (0,3):
     name = input('Digite o seu nome: ')
     dataNasc = int(input('Digite o ano em que você nasceu: '))
     dataAtual = int(input('Digite o ano atual: '))
@@ -35,6 +35,7 @@ for c in range (0,4):
     else:
         label1= name  
 print (' ')
+print (age)
 print ('{} São menores de idade'.format(label0))
 print ('{},{},{}, São maiores de idade'.format(label1,label1,label1))
 #print ('{} '.format(sel1))
@@ -51,6 +52,7 @@ print ('{},{},{}, São maiores de idade'.format(label1,label1,label1))
 # Só pra gittar em 07-10-21
 # Só pra gittar em 08-10-21
 # Só pra gittar em 09-10-21
+# Só pra gittar em 18-10-21
 
 #ano = eval (input ("Nasceu em que ano? "))
 #mes = eval (input ("Nasceu em que mês? "))
