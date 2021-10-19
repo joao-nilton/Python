@@ -1,19 +1,3 @@
-print (' ')
-print('=--=' * 20)
-print('ANO BISSEXTO')
-print('=--=' * 20)
-from datetime import date
-
-ano = int(input('Que ano quer analisar ? Coloque 0 para analisar o ano atual.'))
-print (' ')
-if ano == 0:
-    ano = date.today().year
-if (ano%4==0 and ano%100!=0) or (ano%400==0):
-    print('O ano {} é BISSEXTO'.format(ano))
-else:
-    print('O ano {} NÃO É BISSEXTO'.format(ano))
-
-
     # style --> 0 ,1 , 4, 7     0 = none    1 = bold    4 = underline       7 = negativo    3 = itálico
 # text --> 30 = branco      31 = vermelho   32 = verde  33 = amarelo    34 = azul   35 = vmagenta    36 = ciano 37 = cinza
 # back (background) mesma do text mas de 40 a 47
@@ -25,22 +9,26 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"ANO BISSEXTO."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
+print (' ')
+print('=--=' * 20)
+print('ANO BISSEXTO')
+print('=--=' * 20)
+from datetime import date
 
+ano = int(input('\033[1;34mQue ano quer analisar ? Coloque 0 para analisar o ano atual.\033[m'))
+print (' ')
+if ano == 0:
+    ano = date.today().year
+if (ano%4==0 and ano%100!=0) or (ano%400==0):
+    print('\033[1;35mO ano \033[m\033[1;36m{} \033[m é \033[1;37mBISSEXTO\033[m'.format(ano))
+else:
+    print('\033[1;35mO ano\033[m \033[1;36m{}\033[m \033[1;37mNÃO É BISSEXTO\033[m'.format(ano))
 
-v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
-d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
-p =  (v * d) / 100
-pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
-
-print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
-print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
-print("\n" * 1)
-print('=' * 40)
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
