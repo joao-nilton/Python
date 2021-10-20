@@ -54,6 +54,7 @@ print ('{},{},{}, São maiores de idade'.format(label1,label1,label1))
 # Só pra gittar em 09-10-21
 # Só pra gittar em 18-10-21
 # 19-10-21 começou a pegar o bicho na UEMG
+# 20-10-21 começou a pegar o bicho na UEMG ... procurei ...
 
 #ano = eval (input ("Nasceu em que ano? "))
 #mes = eval (input ("Nasceu em que mês? "))
