@@ -16,12 +16,14 @@ print (' ')
 """#############################################################################################################"""
 print (' ')
 print('=--=' * 20)
-print('Programa que lê três números e mostra qual é o maior e qual é o menor')
+print('\033[1;33mPrograma que lê três números e mostra qual é o maior e qual é o menor\033[m')
 print('=--=' * 20)
-
-primeiro = float(input('Digite o primeiro número: '))
-segundo = float(input('Digite o segundo número: '))
-terceiro = float(input('Digite o terceiro  número: '))
+print (' ')
+primeiro = float(input('\033[1;34mDigite o primeiro número: \033[m'))
+print (' ')
+segundo = float(input('\033[1;35mDigite o segundo número: \033[m'))
+print (' ')
+terceiro = float(input('\033[1;36mDigite o terceiro  número: \033[m'))
 print (' ')
 
 maior = primeiro
