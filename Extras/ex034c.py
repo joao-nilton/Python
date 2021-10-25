@@ -9,15 +9,30 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"SALÁRIO."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
+print (' ')
+print('\033[1;32m=--=\033[m' * 20)
+print('AUMENTO SALARIAL')
+print('\033[1;32m=--=\033[m' * 20)
+print (' ')
 
+sal = float(input('\033[1;31mDigite o valor atual de seu salário: \033[m'))
+print (' ')
+if sal > 1250:
+    sal1 = sal + (sal * 10)/100
+    print('\033[1;33mO seu novo salário será de R$ \033[m{}'.format(sal1))
 
+else:
+    sal <= 1250
+    sal2 = sal + (sal * 15)/100
+    print('\033[1;34mO seu novo salário será de R$ \033[m{}'.format(sal2))
 
+print (' ')
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
 # print(n, end=' ')
