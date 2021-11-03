@@ -15,7 +15,43 @@ print (' ')
 
 """#############################################################################################################"""
 
+print('\033[1;30mObserve as opções abaixo.\n')
+print('\033[1;31m1 : Converte decimal para binário')
+print('\033[1;32m2 : Converte decimal para hexadecimal')
+print('\033[1;33m3 : Converte decimal para octal')
+print('\033[1;34m4 : Converte binário para decimal')
+print('\033[1;35m5 : Converte hexadecimal para decimal')
+print('\033[1;36m6 : Converte octal para decimal')
+print('\033[1;37m7 : Para colorir\n')
 
+
+sel = int(input('Selecione a opçao desejada: '))
+
+num1 = input('\nDigite o número que quer converter: ')
+
+if sel == 1:
+    num1a = int(num1, 10)
+    num1b= (bin(num1a))
+    print('\n{} em decimal equivale a {} em binário\n'.format(num1, num1b[2:]))
+elif sel == 2:
+    num2a = int(num1, 10)
+    num2b= (hex(num2a))
+    print('\n{} em decimal equivale a {} em hexadecimal\n'.format(num1, num2b[2:]))
+elif sel == 3:
+    num3a = int(num1, 10)
+    num3b= (oct(num3a))
+    print('\n{} em decimal equivale a {} em Octal\n'.format(num1, num3b[2:]))
+elif sel == 4:
+    num4a = int(num1, 2)
+    print('O numero {} em binário equivale a {} em decimal '.format (num1, num4a))
+elif sel == 5:
+    num5a = int(num1, 16)
+    print('O numero {} em hexadecimal equivale a {} em decimal '.format (num1, num5a))
+elif sel == 6:
+    num6a = int(num1, 8)
+    print('O numero {} em octal equivale a {} em decimal '.format (num1, num6a))
+else:
+    print('\nOpçao inválida.\n')
 
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
