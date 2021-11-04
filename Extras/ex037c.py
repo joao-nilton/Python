@@ -15,19 +15,19 @@ print (' ')
 
 """#############################################################################################################"""
 
-print('\033[1;30mObserve as opções abaixo.\n')
-print('\033[1;31m1 : Converte decimal para binário')
-print('\033[1;32m2 : Converte decimal para hexadecimal')
-print('\033[1;33m3 : Converte decimal para octal')
-print('\033[1;34m4 : Converte binário para decimal')
-print('\033[1;35m5 : Converte hexadecimal para decimal')
-print('\033[1;36m6 : Converte octal para decimal')
-print('\033[1;37m7 : Para colorir\n')
+print('\033[1;30mObserve as opções abaixo.\n\033[m')
+print('\033[1;31m1 : Converte decimal para binário\033[m')
+print('\033[1;32m2 : Converte decimal para hexadecimal\033[m')
+print('\033[1;33m3 : Converte decimal para octal\033[m')
+print('\033[1;34m4 : Converte binário para decimal\033[m')
+print('\033[1;35m5 : Converte hexadecimal para decimal\033[m')
+print('\033[1;36m6 : Converte octal para decimal\033[m')
+print('\033[1;37m7 : Para colorir\n\033[m')
 
 
-sel = int(input('Selecione a opçao desejada: '))
+sel = int(input('\033[1;32mSelecione a opçao desejada: \033[m'))
 
-num1 = input('\nDigite o número que quer converter: ')
+num1 = input('\n\033[1;33mDigite o número que quer converter: \033[m')
 
 if sel == 1:
     num1a = int(num1, 10)
