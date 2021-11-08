@@ -9,13 +9,22 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"COMPARAÇÃO ENTRE VALORES NUMÉRICOS"\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
+num1 = int(input('Digite o primeiro número a ser comparado: '))
+num2 = int(input('Digite o segundo número a ser comparado: '))
 
+if num1 > num2:
+    print('\nO primeiro valor é maior')
+elif num2 > num1:
+    print('\nO segundo valor é maior')
+#elif num1 == num2:
+else:
+    print('\nNão existe valor maior, os dois são iguais')
 
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
