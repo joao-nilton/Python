@@ -15,8 +15,8 @@ print (' ')
 
 """#############################################################################################################"""
 
-num1 = int(input('Digite o primeiro número a ser comparado: '))
-num2 = int(input('Digite o segundo número a ser comparado: '))
+num1 = int(input('\033[1;33mDigite o primeiro número a ser comparado: \033[m'))
+num2 = int(input('\033[1;32mDigite o segundo número a ser comparado: \033[m'))
 
 if num1 > num2:
     print('\nO primeiro valor é maior')
@@ -24,7 +24,8 @@ elif num2 > num1:
     print('\nO segundo valor é maior')
 #elif num1 == num2:
 else:
-    print('\nNão existe valor maior, os dois são iguais')
+    print('\nNão existe valor maior, os dois são iguais ')
+print (' ')
 
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
