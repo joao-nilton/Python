@@ -9,12 +9,39 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"ENGAJAMENTO."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
+from datetime import date
 
+atual = date.today().year
+nasc = int(input('\033[1;33mAno de nascimento: \033[m'))
+sexo = int(input('\n\033[1;32mDigite 1 para sexo masculino e 2 para sexo feminino: \033[m'))
+idade = atual - nasc
+print('\n\033[1;31mQuem nasceu em {} tem {} anos em {}\033[m'.format(nasc, idade, atual))
+
+if sexo == 1:
+    if idade == 18:
+        print('\nVoce tem que se alistar IMEDIATAMENTE\n')
+   
+    elif idade < 18:
+        saldo = 18 - idade
+        print('\nAinda falta(m) {} anos para o alistamento\n'.format(saldo))
+        ano = atual + saldo
+        print('Seu alistamento será em  {}\n'.format(ano))
+
+    elif idade > 18:
+        saldo = idade - 18
+        print('\nVocê ja deveria ter se alistado ha  {} anos\n'.format(saldo))
+        ano = atual - saldo
+        print('Seu alistamento deveria ter sido em  {}\n'.format(ano))
+elif sexo == 2:
+    print('\nO alistamento para o sexo feminino não é obrigatório')
+
+else:
+   print('\nMas a opção que você escolheu é inválida')
 
 
 

@@ -16,10 +16,12 @@ print (' ')
 """#############################################################################################################"""
 # Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
 import datetime
+
 from datetime import date
 
+atual = date.today().year
 data_atual = date.today()
-
+print(atual)
 print(data_atual)
 
 print (' ')
@@ -37,7 +39,7 @@ for c in range (0,3):
 print (' ')
 print (age)
 print ('{} São menores de idade'.format(label0))
-print ('{},{},{}, São maiores de idade'.format(label1,label1,label1))
+print ('{} São maiores de idade'.format(label1))
 #print ('{} '.format(sel1))
 
 # Só pra gittar em 21-09-21
@@ -66,6 +68,7 @@ print ('{},{},{}, São maiores de idade'.format(label1,label1,label1))
 # 08-11-21 começou a pegar o bicho na UEMG ... tô quase desistindo...
 # 09-11-21 começou a pegar o bicho na UEMG ... tô quase desistindo...
 # 11-11-21 começou a pegar o bicho na UEMG ... tô quase desistindo...
+# 12-11-21 começou a pegar o bicho na UEMG ... tô quase desistindo...
 
 
 
