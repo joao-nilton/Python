@@ -1,1 +1,1 @@
-44mDigite
+atual = date.today().year
