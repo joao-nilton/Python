@@ -15,9 +15,22 @@ print (' ')
 
 """#############################################################################################################"""
 
+nota1 = float(input('Digite a nota da primeira prova: '))
+nota2 = float(input('Digite a nota da segunda prova: '))
+nota3 = float(input('Digite a nota da terceira prova: '))
+nota4 = float(input('Digite a nota alcançada nos trabalhos: '))
 
+media = (nota1 + nota2 + nota3 + nota4)/4
 
-#print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
+if media < 5:
+    print('\nAluno REPROVADO')
+elif media >= 5 and media < 6.9: 
+    print('\nAluno em RECUPERAÇÃO')
+else:
+    print('\nAluno Aprovado')
+
+# Classico. Na pasta extras tem um projeto melhorado. Olha lá
+# Classico. Na pasta extras tem um projeto melhorado. Olha láor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
 # print(n, end=' ')
 #print('\033[3;33;44mOlá, Mundo!\033[m')
