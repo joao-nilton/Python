@@ -15,19 +15,19 @@ print (' ')
 
 """#############################################################################################################"""
 
-nota1 = float(input('Digite a nota da primeira prova: '))
-nota2 = float(input('Digite a nota da segunda prova: '))
-nota3 = float(input('Digite a nota da terceira prova: '))
-nota4 = float(input('Digite a nota alcançada nos trabalhos: '))
+nota1 = float(input('\033[1;34mDigite a nota da primeira prova: \033[m'))
+nota2 = float(input('\033[1;35mDigite a nota da segunda prova: \033[m'))
+nota3 = float(input('\033[1;36mDigite a nota da terceira prova: \033[m'))
+nota4 = float(input('\033[1;37mDigite a nota alcançada nos trabalhos: \033[m'))
 
 media = (nota1 + nota2 + nota3 + nota4)/4
 
 if media < 5:
-    print('\nAluno REPROVADO')
+    print('\n\033[1;31mAluno REPROVADO\033[m')
 elif media >= 5 and media < 6.9: 
-    print('\nAluno em RECUPERAÇÃO')
+    print('\n\033[1;33mAluno em RECUPERAÇÃO\033[m')
 else:
-    print('\nAluno Aprovado')
+    print('\n\033[1;32mAluno Aprovado\033[m')
 
 # Classico. Na pasta extras tem um projeto melhorado. Olha lá
 # Classico. Na pasta extras tem um projeto melhorado. Olha láor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
