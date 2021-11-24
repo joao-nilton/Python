@@ -17,11 +17,11 @@ print (' ')
 
 from datetime import date
 atual = date.today().year
-nasc = int(input('Digite o ano de nascimento do atleta:  '))
+nasc = int(input('\033[1;36mDigite o ano de nascimento do atleta: \033[m '))
 # sexo = int(input('\nDigite 1 para sexo masculino e 2 para sexo feminino: '))
 idade = atual - nasc
 
-print('O atleta tem {} anos'.format(idade))
+print('\033[1;31mO atleta tem\033[m\033[1;33m {} \033[manos'.format(idade))
 
 
 
