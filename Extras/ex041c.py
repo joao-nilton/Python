@@ -26,13 +26,13 @@ print('\033[1;31mO atleta tem\033[m\033[1;33m {} \033[manos'.format(idade))
 
 
 if idade > 1 and idade <= 9:
-    print('\nClassificação: Atleta MIRIM')
+    print('\n\033[1;32mClassificação:\033[m \033[1;342009mAtleta MIRIM\033[m')
 elif idade <=14: 
-    print('\nClassificação: Atleta INFANTIL')
+    print('\n\033[1;32mClassificação:\033[m \033[1;34mAtleta INFANTIL\033[m')
 elif idade <= 19:
-    print('\nClassificação: Atleta JÚNIOR')
+    print('\n\033[1;32mClassificação:\033[m \033[1;34mAtleta JÚNIOR\033[m')
 elif idade <= 25:
-    print('\nClassificação: Atleta SÊNIOR')  
+    print('\n\033[1;32mClassificação: \033[m\033[1;34mAtleta SÊNIOR\033[m')  
 else:
     print('\nClassificação: Atleta MASTER')
 
