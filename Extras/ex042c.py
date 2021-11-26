@@ -9,12 +9,26 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;41m"FORMA OU NÃO TRIANGULO."\033[m\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
+lado1 = float(input('Digite o  valor do primeiro lado: '))
+lado2 = float(input('Digite o valor do segundo lado: '))
+lado3 = float(input('Digite o valor do terceiro lado:  '))
+if lado1 < lado2 + lado3 and lado2 < lado1 + lado3 and lado3 < lado1 +lado2:
+#if lado1 > lado2 - lado3 and lado2 > lado1 - lado3 and lado3 > lado1 - lado2: * não deu certo porque o valor da diferenca é em módulo.
+    print('\nOs segmentos acima podem formar um triângulo') 
+    if lado1 == lado2 and lado1 == lado3 and lado3 == lado2:
+        print('Este triângulo é equilátero')  
+    elif lado1 == lado2 or lado1 == lado3 or lado3 == lado2:
+        print('Este triângulo é isósceles')  
+    elif lado1 != lado2 and lado1 != lado3 and lado3 != lado2:
+        print('Este triângulo é escaleno')  
+else:
+    print('\nOs segmentos acima não podem formar um triângulo')
 
 
 
