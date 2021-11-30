@@ -15,7 +15,7 @@ print (' ')
 
 """#############################################################################################################"""
 
-lado1 = float(input('Digite o  valor do primeiro lado: '))
+lado1 = float(input('\033[1;31;43mDigite o  valor do primeiro lado: \033[m'))
 lado2 = float(input('Digite o valor do segundo lado: '))
 lado3 = float(input('Digite o valor do terceiro lado:  '))
 if lado1 < lado2 + lado3 and lado2 < lado1 + lado3 and lado3 < lado1 +lado2:
