@@ -14,8 +14,9 @@ print('\033[1;36m=\033[m' * 312)
 print (' ')
 
 """#############################################################################################################"""
-peso = float(input('Digite o seu peso em kilograma: '))
-altura = float(input('Digite a sua altura em metros: '))
+peso = float(input('\033[1;;47;31mDigite o seu peso em kilograma: \033[m'))
+print(" ")
+altura = float(input('\033[1;;47;31mDigite a sua altura em metros: \033[m'))
 
 imc = peso/altura**2
 
