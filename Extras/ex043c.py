@@ -22,7 +22,7 @@ imc = peso/altura**2
 
 print ('\nSeu IMC é de {:.1f}'.format(imc))
 if imc < 18.5:
-    print('\nVocê está abaixo do peso ideal.\n')
+    print('\n\033[1;;41;37mVocê está abaixo do peso ideal.\033[m\n')
 elif imc >= 18.5 and imc < 25:
     print('\nVocê está no peso ideal.\n')
 elif imc >= 25 and imc < 30:
