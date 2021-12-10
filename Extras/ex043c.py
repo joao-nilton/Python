@@ -24,13 +24,13 @@ print ('\nSeu IMC é de {:.1f}'.format(imc))
 if imc < 18.5:
     print('\n\033[1;;41;37mVocê está abaixo do peso ideal.\033[m\n')
 elif imc >= 18.5 and imc < 25:
-    print('\nVocê está no peso ideal.\n')
+    print('\n\033[1;;42;37mVVocê está no peso ideal.\033[m\n')
 elif imc >= 25 and imc < 30:
-    print('\nVocê está com sobrepeso.\n')
+    print('\n\033[1;;44;37mVocê está com sobrepeso.\033[m\n')
 elif imc >= 30 and imc < 40:
-    print('\nVocê está com obesidade.\n')
+    print('\n\033[1;;43;37mVVocê está com obesidade.\033[m\n')
 else:
-    print('\nVocê está com obesidade mórbida.\n')
+    print('\n\033[1;;44;37mVVocê está com obesidade mórbida.\033[m\n')
 
 '''
 IAC significa Índice de Adiposidade Corporal. É um novo método que usa o tamanho dos quadris para medira gordura do corpo
