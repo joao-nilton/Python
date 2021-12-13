@@ -9,13 +9,66 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"VALOR DO PRODUTO."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
+'''
+valor = float(input('Qual o valor do produto: '))
 
+print('\nDigite (1) um  para dinheiro/cheque.\n')
+print('\nDigite (2) dois para cartão à vista.\n')
+print('\nDigite (3) para até 2X no cartão.\n')
+print('\nDigite (4) para 3X ou mais no cartão.\n')
+pagamento = float(input('Qual a forma de Pagamento? '))
+
+
+if pagamento == 1:
+    desconto1 = (valor - ((valor * 10)/100))
+    print('\nO valor a ser pago é de R$ {:.2f}\n:'.format(desconto1))
+elif pagamento == 2:
+    desconto2 = (valor - ((valor * 5)/100))
+    print('\nO valor a ser pago é de R$ {:.2f}\n:'.format(desconto2))
+elif pagamento == 3:
+    desconto3 = valor 
+    print('\nO valor a ser pago é de R$ {:.2f}\n:'.format(desconto3))
+elif pagamento == 4:
+    desconto4 = valor + ((valor * 20)/100)
+    print('\nO valor a ser pago é de R$ {:.2f}\n:'.format(desconto4)) ''' 
+
+
+    # MODELO GUANABARA
+
+print('{:=^40}'.format('LOJAS GUANABARA\n'))
+valor = float(input('Qual o valor do produto: '))
+print('''FORMAS DE PAGAMENTO
+[1] Pagamento à vista dinheiro/cheque.')
+[2] Pagamento à vista no cartão.')
+[3] Pagamento em até 2X no cartão.')
+[4] Pagamento em 3X ou mais no cartão.\n''')
+
+pagamento = float(input('Qual a forma de Pagamento? '))
+
+if pagamento == 1:
+    desconto = (valor - ((valor * 10)/100))
+   
+elif pagamento == 2:
+    desconto = (valor - ((valor * 5)/100))
+
+elif pagamento == 3:
+    desconto  = valor 
+    parcela = valor/2
+    print('Sua compra será parcelada em 2x de {}, SEM JUROS.'.format(parcela))
+elif pagamento == 4:
+    prestacoes = int(input('\nQuantas parcelas? '))
+    desconto = valor + ((valor * 20)/100)
+    prestacoesjuros = desconto/prestacoes
+    print('\nSua compra será parcelada em {}x de R$ {:.2f} COM JUROS.'.format(prestacoes, prestacoesjuros))
+else:
+    print( 'OPÇÃO INVÁLIDA.')
+print('\nSua compra de R$ {:.2f} vai custar R$ {:.2f} no final.\n'.format(valor, desconto))
 
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
