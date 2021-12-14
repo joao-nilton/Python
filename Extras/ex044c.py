@@ -49,7 +49,7 @@ print('''FORMAS DE PAGAMENTO
 [3] Pagamento em até 2X no cartão.')
 [4] Pagamento em 3X ou mais no cartão.\n''')
 
-pagamento = float(input('Qual a forma de Pagamento? '))
+pagamento = float(input('\033[1;44;33mQual a forma de Pagamento? \033[m'))
 
 if pagamento == 1:
     desconto = (valor - ((valor * 10)/100))
@@ -60,9 +60,9 @@ elif pagamento == 2:
 elif pagamento == 3:
     desconto  = valor 
     parcela = valor/2
-    print('Sua compra será parcelada em 2x de {}, SEM JUROS.'.format(parcela))
+    print('\033[1;42;33mSua compra será parcelada em 2x de {}, SEM JUROS.\033[m'.format(parcela))
 elif pagamento == 4:
-    prestacoes = int(input('\nQuantas parcelas? '))
+    prestacoes = int(input('\n\033[1;45;33mQuantas parcelas? \033[m'))
     desconto = valor + ((valor * 20)/100)
     prestacoesjuros = desconto/prestacoes
     print('\nSua compra será parcelada em {}x de R$ {:.2f} COM JUROS.'.format(prestacoes, prestacoesjuros))
