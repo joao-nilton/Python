@@ -65,10 +65,10 @@ elif pagamento == 4:
     prestacoes = int(input('\n\033[1;45;33mQuantas parcelas? \033[m'))
     desconto = valor + ((valor * 20)/100)
     prestacoesjuros = desconto/prestacoes
-    print('\nSua compra será parcelada em {}x de R$ {:.2f} COM JUROS.'.format(prestacoes, prestacoesjuros))
+    print('\n\033[1;33mSua compra será parcelada em {}x de R$ {:.2f} COM JUROS.\033[m'.format(prestacoes, prestacoesjuros))
 else:
-    print( 'OPÇÃO INVÁLIDA.')
-print('\nSua compra de R$ {:.2f} vai custar R$ {:.2f} no final.\n'.format(valor, desconto))
+    print( '\033[1;33mOPÇÃO INVÁLIDA.\033[m')
+print('\n\033[1;33mSua compra de R$ {:.2f} vai custar R$ {:.2f} no final.\n\033[m'.format(valor, desconto))
 
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
