@@ -9,21 +9,62 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 print (' ')
 print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print ("  {:^150}  ".format('\033[1;31m"PEDRA, PAPEL, TESOURA."\033[m'))
 print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
+from random import randint
+from time import sleep
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = randint(0,2)
+print( '''Suas opções
+[0] PEDRA
+[1] PAPEL
+[2] TESOURA ''')
+jogador = int(input('Qual é a sua jogada? '))
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
 
+print('-='* 20)
+print('O computador jogou {}'.format(itens[computador]))
+print('O jogador jogou {}'.format(itens[jogador]))
+print('-='* 20)
 
-v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
-d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
-p =  (v * d) / 100
-pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
+if computador == 0: #copmutador jogou PEDRA.
+    if jogador == 0:
+        print('EMPATE')
+    elif jogador == 1:
+        print('JOGADOR VENCE')
+    elif jogador == 2:
+        print('COMPUTADOR VENCE')
+    else:
+        print('JOGADA INVÁLIDA')
+    
 
-print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
-print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
-print("\n" * 1)
+elif computador == 1: # computador jogou PAPEL.
+    if jogador == 0:
+        print('COMPUTADOR VENCE')
+    elif jogador == 1:
+        print('EMPATE')
+    elif jogador == 2:
+        print('JOGADOR VENCE')
+    else:
+        print('JOGADA INVÁLIDA')
+
+elif computador == 2: # computador jogou TESOURA.
+    if jogador == 0:
+        print('JOGADOR VENCE')
+    elif jogador == 1:
+        print('COMPUTADOR VENCE')
+    elif jogador == 2:
+        print('EMPATE')
+    else:
+        print('JOGADA INVÁLIDA')
+
 print('=' * 40)
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
