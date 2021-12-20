@@ -19,9 +19,9 @@ from time import sleep
 itens = ('Pedra', 'Papel', 'Tesoura')
 computador = randint(0,2)
 print( '''Suas opções
-[0] PEDRA
-[1] PAPEL
-[2] TESOURA ''')
+\033[1;33m[0] PEDRA\033[m
+\033[1;33m[1] PAPEL\033[m
+\033[1;33m[2] TESOURA\033[m ''')
 jogador = int(input('Qual é a sua jogada? '))
 print('JO')
 sleep(1)
@@ -30,8 +30,8 @@ sleep(1)
 print('PO!!!')
 
 print('-='* 20)
-print('O computador jogou {}'.format(itens[computador]))
-print('O jogador jogou {}'.format(itens[jogador]))
+print('\033[1;33mO computador jogou {}\033[m'.format(itens[computador]))
+print('\033[1;33mO jogador jogou {}\033[m'.format(itens[jogador]))
 print('-='* 20)
 
 if computador == 0: #copmutador jogou PEDRA.
