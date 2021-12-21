@@ -23,11 +23,11 @@ print( '''Suas opções
 \033[1;33m[1] PAPEL\033[m
 \033[1;33m[2] TESOURA\033[m ''')
 jogador = int(input('Qual é a sua jogada? '))
-print('JO')
+print('\033[1;34mJO\033[m')
 sleep(1)
-print('KEN')
+print('\033[1;35mKEN\033[m')
 sleep(1)
-print('PO!!!')
+print('\033[1;36mPO!!!\033[m')
 
 print('-='* 20)
 print('\033[1;33mO computador jogou {}\033[m'.format(itens[computador]))
