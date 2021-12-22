@@ -33,16 +33,16 @@ print('-='* 20)
 print('\033[1;33mO computador jogou {}\033[m'.format(itens[computador]))
 print('\033[1;33mO jogador jogou {}\033[m'.format(itens[jogador]))
 print('-='* 20)
-
+print(' ')
 if computador == 0: #copmutador jogou PEDRA.
     if jogador == 0:
-        print('EMPATE')
+        print('\033[1;31;43mEMPATE\033[m')
     elif jogador == 1:
-        print('JOGADOR VENCE')
+        print('\033[1;31;43mJOGADOR VENCE\033[m')
     elif jogador == 2:
-        print('COMPUTADOR VENCE')
+        print('\033[1;31;43mCOMPUTADOR VENCE\033[m')
     else:
-        print('JOGADA INVÁLIDA')
+        print('\033[1;31;43mJOGADA INVÁLIDA\033[m')
     
 
 elif computador == 1: # computador jogou PAPEL.
