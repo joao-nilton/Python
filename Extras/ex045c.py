@@ -57,13 +57,13 @@ elif computador == 1: # computador jogou PAPEL.
 
 elif computador == 2: # computador jogou TESOURA.
     if jogador == 0:
-        print('JOGADOR VENCE')
+        print('\033[1;31;45mJOGADOR VENCE\033[m')
     elif jogador == 1:
-        print('COMPUTADOR VENCE')
+        print('\033[1;31;45mCOMPUTADOR VENCE\033[m')
     elif jogador == 2:
-        print('EMPATE')
+        print('\033[1;31;45mEMPATE\033[m')
     else:
-        print('JOGADA INVÁLIDA')
+        print('\033[1;31;45mJOGADA INVÁLIDA\033[m')
 
 print('=' * 40)
 
