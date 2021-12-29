@@ -20,12 +20,12 @@ import emoji
 
 
 
-print('Contagem regressiva para queima dos fogos')
+print('\033[1;32m Contagem regressiva para queima dos fogos\033[m')
 print (' ')
 for c in range( 10, 0, -1 ): # ou (10, -1, -1) para contar até zero.
     print(c)
     sleep(1)
-print (' \033[1;33m \033[m')
+print (' ')
 print(emoji.emojize('\033[1;33mPOW!! POW!! KABUM!!! :bottle_with_popping_cork:\033[m',use_aliases=True))
 print (' ')
 print(emoji.emojize('\033[1;33mPOW!! POW!! KABUM!!! :fire:\033[m',use_aliases=True,))
