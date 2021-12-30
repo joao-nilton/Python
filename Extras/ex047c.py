@@ -8,33 +8,23 @@ cores ={'limpa':'\033[m', 'branco':'\033[30m','vermelho':'\033[31m','verde':'\03
 bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[42m','amarelo':'\033[43m','azul':'\033[44m', 'mangenta':'\033[45m','ciano':'\033[46m','cinza':'\033[47m', 'pretoebranco':'\033[1;40m'}
 
 print (' ')
-print('=' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CONTAGEM REGRESSIVA"\033[m'))
-print('=' * 312)  
+print('\033[1;36m=\033[m' * 312)
+print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
+print('\033[1;36m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
-from time import sleep
-import emoji
 
+v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
+d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
+p =  (v * d) / 100
+pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
 
-
-print('\033[1;32m Contagem regressiva para queima dos fogos\033[m')
-print (' ')
-for c in range( 10, 0, -1 ): # ou (10, -1, -1) para contar até zero.
-    print (c)
-    
-    sleep(1)
-print (' ')
-print(emoji.emojize('\033[1;33mPOW!! POW!! KABUM!!! :bottle_with_popping_cork:\033[m',use_aliases=True))
-print (' ')
-print(emoji.emojize('\033[1;33mPOW!! POW!! KABUM!!! :fire:\033[m',use_aliases=True,))
-print (' ')
-print(emoji.emojize(':fireworks:',use_aliases=True))
-
-
-
+print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
+print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
+print("\n" * 1)
+print('=' * 40)
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
