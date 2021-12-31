@@ -27,9 +27,9 @@ for c in range( 10, 0, -1 ): # ou (10, -1, -1) para contar até zero.
     
     sleep(1)
 print (' ')
-print(emoji.emojize('\033[1;33mPOW!! POW!! KABUM!!! :bottle_with_popping_cork:\033[m',use_aliases=True))
+print(emoji.emojize('POW!! POW!! KABUM!!! :bottle_with_popping_cork:',use_aliases=True))
 print (' ')
-print(emoji.emojize('\033[1;33mPOW!! POW!! KABUM!!! :fire:\033[m',use_aliases=True,))
+print(emoji.emojize('POW!! POW!! KABUM!!! :fire:',use_aliases=True,))
 print (' ')
 print(emoji.emojize(':fireworks:',use_aliases=True))
 
