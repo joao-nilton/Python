@@ -26,7 +26,7 @@ n = 0
 for n in range (1, 51): # ocorre maior numero de iteraçoes. para ver print('.', end = '')
     if n % 2 == 0 :
         print(n, end=' ')
-print('FIM')
+print('\n\nFIM\n')
 
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
