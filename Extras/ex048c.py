@@ -12,7 +12,7 @@ for c in range(0, 501, 3):
    if c % 2 != 0 and c % 3 == 0:
     sum += c
     print(c, end=' ')
-print('\nO somatório de todos os valores foi {}'.format(sum))
+print('\n\nO somatório de todos os valores foi \033[1;34m{}\033[m'.format(sum))
 print(' + - + ' * 20 )
 print(' ')
 
@@ -25,7 +25,7 @@ for c in range(0, 501, 2):
         sum += c
         print(c, end=' ')
 
-print('\nO somatório de todos os valores foi {}'.format(sum))
+print('\n\nO somatório de todos os valores foi \033[1;34m {}\033[m'.format(sum))
 print(' ++ ' * 20 )
 print(' ')
 
