@@ -7,6 +7,34 @@
 cores ={'limpa':'\033[m', 'branco':'\033[30m','vermelho':'\033[31m','verde':'\033[32m','amarelo':'\033[33m','azul':'\033[34m', 'mangenta':'\033[35m','ciano':'\033[36m','cinza':'\033[37m', 'pretoebranco':'\033[1;30m'}
 bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[42m','amarelo':'\033[43m','azul':'\033[44m', 'mangenta':'\033[45m','ciano':'\033[46m','cinza':'\033[47m', 'pretoebranco':'\033[1;40m'}
 
+print (' ')
+print('=' * 312)
+print ("  {:^150}  ".format('\033[1;31m"TABUADA COM LAÇO FOR"\033[m'))
+print('=' * 312)  
+print (' ')
+
+"""#############################################################################################################"""
+print('=' * 40)
+print('Este é um gerador de tabuada') 
+print('=' * 40)
+n = float(input('\n\033[1;33mDigite qual o número que voce quer ver a multiplicação: \033[m '))
+print (' ')
+
+
+cont = -1
+for c in range(0, 11):
+        cont = cont + 1 # ou cont +=1 
+        mult = n * cont
+        print('{} X {} = {}'.format(n, cont, mult))
+
+print('=' * 40) 
+
+# OU versão Guanabara.
+n = float(input('\n\033[1;35mDigite qual o número que voce quer ver a multiplicação: \033[m '))
+for c in range(0, 11):
+        print('{} X {:2} = {}'.format(n, c , n * c))
+
+print('=' * 40) 
 
 
 
