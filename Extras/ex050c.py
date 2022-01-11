@@ -9,6 +9,45 @@ bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[
 
 
 
+print (' ')
+print('=' * 312)
+print ("  {:^150}  ".format('\033[1;31m"SOMA ENTRE NÚMEROS PARES"\033[m'))
+print('=' * 312)  
+print (' ')
+
+"""#############################################################################################################"""
+print('=' * 40)
+
+# n = float(input('\n\033[1;33mDigite qual o número que voce quer ver a multiplicação: \033[m '))
+print (' ')
+'''
+sum = 0
+cont = 0
+for c in range(0, 6):
+        cont = cont + 1
+        n = int(input('Digite o {}º número:   '.format(cont)))
+        if n % 2 == 0:
+            sum = sum + n   
+
+print ('A soma dos números pares é:  {}'.format(sum))
+
+print('=' * 40) '''
+
+# OU ... Soluçao Guanabara
+print (' ')
+
+sum = 0
+cont = 0
+for c in range(1, 7):
+        
+        n = int(input('\033[1;31mDigite o {}º número:  \033[m '.format(c)))
+        if n % 2 == 0:
+            sum += n 
+            cont += 1 
+print ('\n\033[1;34mVocê informou {} números pares e a soma foi {}\033[m '.format(cont, sum))
+print (' ')
+print('=' * 40) 
+
 
 
 
