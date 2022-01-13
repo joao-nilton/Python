@@ -8,23 +8,40 @@ cores ={'limpa':'\033[m', 'branco':'\033[30m','vermelho':'\033[31m','verde':'\03
 bkg ={'limpa':'\033[m', 'branco':'\033[40m','vermelho':'\033[41m','verde':'\033[42m','amarelo':'\033[43m','azul':'\033[44m', 'mangenta':'\033[45m','ciano':'\033[46m','cinza':'\033[47m', 'pretoebranco':'\033[1;40m'}
 
 print (' ')
-print('\033[1;36m=\033[m' * 312)
-print ("  {:^150}  ".format('\033[1;31m"CÁLCULO DE DESCONTOS."\033[m'))
-print('\033[1;36m=\033[m' * 312)  
+print('\033[1;34m=\033[m' * 312)
+print ("  {:^150}  ".format('\033[1;31m"PROGRESSÃO ARITMÉTICA - PA."\033[m'))
+print('\033[1;34m=\033[m' * 312)  
 print (' ')
 
 """#############################################################################################################"""
 
+'''
+a = int(input('\033[1;33mQual o valor do primeiro Termo?\033[m '))
+r = int(input('\033[1;33mQual é a Razão? \033[m '))
+n = int(input('\033[1;33mQual é a quantidade de termos? \033[m '))
+print(' ')
+an = a + (n - 1) * r
+for c in range (a, an + r, r):
+    print (c, end='  ->  ')
+print('FIM.')
+print(' ')
+'''
 
-v = float(input('\033[1;35mDigite o valor da compra em Reais: \033[m'))
-d = float(input('\033[1;35mDigite o valor do desconto em porcentagem: \033[m'))
-p =  (v * d) / 100
-pg = v - p # ou novo preco = v - (v * d / 100) --> que substituiria as variáveis p e pg
+# Solução Guanabara
 
-print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
-print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
-print("\n" * 1)
-print('=' * 40)
+primeiro = int(input('\033[1;33mPrimeiro termo: \033[m '))
+razao = int(input('\033[1;33mRazão:  \033[m '))
+decimo = primeiro + (10 - 1) * razao
+for c in range (primeiro, decimo, razao):
+    print('{}'.format(c), end=' -> ')
+print('ACABOU')
+print(' ')
+
+#+++++
+
+# print(n, end=' ')
+
+
 
 #print('\n\033[1;33mO valor do desconto é de R$ {:.2f}.\033[m'.format(p), end=' ') 
 #print('\033[1;33mVocê terá que pagar R$ {:.2f}\033[m'.format(pg))
