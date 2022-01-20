@@ -115,7 +115,7 @@ print ('{} São maiores de idade'.format(label1))
 # 18-01-22 vamos ver até quando eu vou continuar com isso aqui ... INÍCIO Da desistência...
 
 # '\033[1;31m"HOJE É 19-01-2022 EU ABANDONO A PROGRAMAÇÃO. VOU CONTINUAR GITTANDO MAIS UM MÊS."\033[m'
-
+# "HOJE É 19-01-2022 EU ABANDONO A PROGRAMAÇÃO. VOU CONTINUAR GITTANDO MAIS UM MÊS. 20-01-2022
 
 #ano = eval (input ("Nasceu em que ano? "))
 #mes = eval (input ("Nasceu em que mês? "))
